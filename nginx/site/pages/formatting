@@ -1,0 +1,157 @@
+
+The pagination system is quite simple; The /pages folder is the target root to look for the pages to be displayed
+on the content div of the website. This system is based around the definition of JSON files containing the
+information to be displayed on the website.
+
+For the record, folders and file names do not matter at all, but are useful for organization purposes,
+so you should still find a way to keep them coherent and structured.
+
+---------------------------------- // ----------------------------------
+
+The pages are organized in sections and subsections, so that there is a cohesive and understandable structure
+and index for them. Each section has to be defined and it can then be referenced in the content files.
+
+To create a section, a json file must be created following this base format:
+
+```json
+{
+    type: "section",
+    name: "example section name",
+    namespace: "main",
+    position: #
+}
+```
+
+Formatting legend:
+- type: "section" (required)
+    >   Defines the type of the json file so the system knows how to handle it.
+
+- name: "example section name" (required)
+    >   The name of the section to be displayed on the website.
+
+- namespace: "main" (required)
+    >   The namespace of the section, used to reference it in the content files and in the index, with the
+    subsections declared in the content files.
+
+- position: # (required)
+    >   The position of the section in the index. Think of it as the "priority" of placement in the navigation.
+
+---------------------------------- // ----------------------------------
+
+The pages in the website are represented by json files containing the information to be displayed,
+with a basis on:
+
+```json
+{
+    type: "page",
+
+    section: {
+        "namespace": "main.sub.sub.(...)",
+        "position": #
+    },
+
+    content: {
+
+        column OR row: {
+
+            audio: {
+                "title": "example audio title",
+                "source": "example audio source"
+            },
+
+            video: {
+                "title": "example video title",
+                "source": "example video source"
+            },
+
+            image: {
+                "title": "example image title",
+                "source": "example image source"
+            },
+
+            text: {
+                "title": "example text title",
+                "content": "example text content",
+                "title-size": ##px,
+                "content-size": ##px
+            }
+
+            -: {
+                "vertical-divide-before": boolean,
+                "vertical-divide-after": boolean,
+                "horizontal-divide-before": boolean,
+                "horizontal-divide-after": boolean
+            }
+
+        }
+    }
+}
+```
+
+Formatting legend:
+
+- type: "page" (required)
+    >   Defines the type of the json file so the system knows how to handle it.
+
+- section:  (required)
+    >   The section of the page, used to reference it in the index and in the navigation.
+
+    - namespace: "main.sub.sub.(...)" (required)
+        >   The namespace of the section, used to reference it in the index and in the navigation.
+        The "main" namespace is the root of the section, featured in the navigation and index. The "sub" parts
+        of the namespace are the subsections of the section, featured only in the index. Any subsequent subsections
+        are nested under the previous ones.
+
+    - position: # (required)
+        >   The position of the page in the section. Think of it as the page number.
+
+- content: (required)
+
+    - column OR row: (required)
+        >   The layout of the page. It can be either a column or a row, and it can contain any number of
+        audio, video, image or text elements. This layout can be nested to create more complex structures.
+
+        - audio: (optional)
+            >   The audio element of the page.
+
+            - title: "example audio title" (required)
+                >   The title of the audio element.
+
+            - source: "./audio.mp3" OR "https://audio.mp3" (required)
+                >   The source of the audio element.
+
+        - video: (optional)
+            >   The video element of the page.
+
+            - title: "example video title" (required)
+                >   The title of the video element.
+
+            - source: "./video.mp4" OR "https://video.mp4" (required)
+                >   The source of the video element.
+
+        - image: (optional)
+            >   The image element of the page.
+
+            - title: "example image title" (required)
+                >   The title of the image element.
+
+            - source: "./image.png" OR "https://image.png" (required)
+                >   The source of the image element.
+
+        - text: (optional)
+            >   The text element of the page.
+
+            - title: "example text title" (optional)
+                >   The title of the text element. If not defined, the title will not be displayed.
+
+            - content: "lorem ipsum dolor sit amet" (optional)
+                >   The content of the text element.
+
+            - title-size: ##px (optional)
+                >   The size of the title of the text element. If not defined, the default size will be used.
+
+            - content-size: ##px (optional)
+                >   The size of the content of the text element. If not defined, the default size will be used.
+
+        - vertical/horizontal-divider-before/after: (optional)
+                > A vertical/horizontal divider that can be placed before or after the element it is defined on.

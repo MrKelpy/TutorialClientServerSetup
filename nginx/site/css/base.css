@@ -1,0 +1,89 @@
+@import url("pallette.css");
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    background: var(--secondary);
+    width: 100%;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 6em;
+    width: 6em;
+    padding: 0.8em
+}
+
+.vertical-divider.header-divider {
+    margin: 10px
+}
+
+.division-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.header-middle {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 auto;
+}
+
+.column-info-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    font-size: 14px;
+    margin: 1em
+}
+
+.column-info-container.right-side {
+    text-align: right;
+    color: var(--details)
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+
+    padding: 2em;
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    flex-flow: row;
+    background: var(--tertiary);
+    color: var(--details);
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer.column-info-container {
+    font-size: 11px;
+}
+
+#footer img {
+    margin-left: 0.8em;
+    height: 3em;
+    width: 3em;
+}

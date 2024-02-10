@@ -1,0 +1,126 @@
+2023/12/26 19:36:35 [emerg] 18684#19368: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2023/12/26 19:36:43 [emerg] 15140#34540: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2023/12/26 19:37:24 [emerg] 11720#8996: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2023/12/26 19:37:29 [emerg] 34792#32708: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2023/12/27 20:12:23 [emerg] 17844#22464: unexpected "}" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:59
+2023/12/27 20:13:40 [emerg] 18164#17700: unexpected "}" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:59
+2023/12/27 20:16:05 [emerg] 13744#11144: invalid number of arguments in "include" directive in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:57
+2023/12/27 22:02:04 [error] 9104#16972: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:34557"
+2023/12/27 22:22:54 [emerg] 2060#6216: directive "access_log" is not terminated by ";" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:43
+2023/12/27 22:41:49 [error] 13452#748: *1 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:42:47 [error] 18724#3184: *1 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:42:56 [error] 18724#3184: *1 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:42:58 [error] 18724#3184: *4 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:45:18 [error] 18724#3184: *6 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:35 [error] 15412#3836: *1 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:37 [error] 15412#3836: *3 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:37 [error] 15412#3836: *5 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:37 [error] 15412#3836: *7 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *9 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *11 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *13 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *15 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *17 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:38 [error] 15412#3836: *19 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:46:39 [error] 15412#3836: *21 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:47:58 [error] 15412#3836: *23 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:00 [error] 15412#3836: *25 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:00 [error] 15412#3836: *27 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:00 [error] 15412#3836: *29 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:00 [error] 15412#3836: *31 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:45 [error] 6360#1400: *1 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:48:46 [error] 6360#1400: *3 FastCGI sent in stderr: "PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1
+PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php:1
+Stack trace:
+#0 {main}
+  thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
+2023/12/27 22:50:24 [emerg] 20072#18420: directive "error_log" is not terminated by ";" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:43
+2023/12/27 22:50:45 [emerg] 18444#8372: directive "error_log" is not terminated by ";" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:43
