@@ -1,0 +1,8 @@
+{
+  "type": "section",
+  "name": "Home",
+  "namespace": "home",
+  "position": 1,
+  "visible": true,
+  "index": false
+}

@@ -1,3 +1,34 @@
+<?php
+    require_once 'interpreter/Engine.php';
+    require_once 'interpreter/PageSystemReader.php';
+    require_once 'interpreter/PageSection.php';
+    
+    use interpreter\engine;
+    use interpreter\PageSystemReader;
+    
+    $interpreter = new Engine();
+    $reader = new PageSystemReader();
+    
+    // If the section or the page are not set, redirect to the home page.
+    if (!isset($_GET['section']) || !isset($_GET['page'])) {
+        header('Location: index.php?section=home&page=0');
+    }
+    
+    // If the page exceeds the number of pages in the section, redirect them to the last page.
+    $section = $reader->getSectionByNamespace($_GET['section']);
+    $pages = $reader->getPagesForSection($section);
+    
+    if ($_GET['page'] > count($pages)) {
+        header('Location: index.php?section=' . $_GET['section'] . '&page=' . count($pages));
+    }
+    
+    // If the page is less than 0, redirect them to the first page.
+    if ($_GET['page'] < 0) {
+        header('Location: index.php?section=' . $_GET['section'] . '&page=0');
+    }
+        
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +48,9 @@
         </div>
         
         <div class="header-middle">
-            <div class="navigation"></div>
+            <div class="navigation">
+                <?php echo $interpreter->buildNavigationElements(); ?>
+            </div>
         </div>
         
         <div class="division-container">
@@ -33,7 +66,12 @@
     </div>
 
     <!-- The content of the website, changes, being loaded dynamically with each page. -->
-    <div id="content">a</div>
+    <div id="content">
+        <?php echo $interpreter->buildPage($_GET['section'], $_GET['page']); ?>
+    </div>
+
+    <div id="page-navigation">
+    </div>
 
     <div id="footer">
         

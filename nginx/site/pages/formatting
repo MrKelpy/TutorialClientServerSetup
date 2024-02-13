@@ -18,7 +18,9 @@ To create a section, a json file must be created following this base format:
     type: "section",
     name: "example section name",
     namespace: "main",
-    position: #
+    position: #,
+    visible: boolean,
+    index: boolean
 }
 ```
 
@@ -36,6 +38,12 @@ Formatting legend:
 - position: # (required)
     >   The position of the section in the index. Think of it as the "priority" of placement in the navigation.
 
+- visible: boolean (optional)
+    >   Whether the section is visible in the navigation or not. If not defined, the default value is true.
+
+- index: boolean (optional)
+    >   Whether the section contains an index or not. If not defined, the default value is true.
+
 ---------------------------------- // ----------------------------------
 
 The pages in the website are represented by json files containing the information to be displayed,
@@ -47,6 +55,7 @@ with a basis on:
 
     section: {
         "namespace": "main.sub.sub.(...)",
+        "subsection-name": "example subsection name",
         "position": #
     },
 
@@ -101,6 +110,9 @@ Formatting legend:
         The "main" namespace is the root of the section, featured in the navigation and index. The "sub" parts
         of the namespace are the subsections of the section, featured only in the index. Any subsequent subsections
         are nested under the previous ones.
+
+    - subsection-name: "example subsection name" (required)
+        >   The name of the subsection to be displayed on the website.
 
     - position: # (required)
         >   The position of the page in the section. Think of it as the page number.

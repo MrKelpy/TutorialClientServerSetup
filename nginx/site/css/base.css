@@ -37,6 +37,23 @@ body {
     display: flex;
     flex-flow: row;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation a {
+    color: var(--details);
+    text-decoration: none;
+    padding: 0.4em;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: var(--navigation);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation a:hover {
+    background: #f26868;
+    color: var(--details);
 }
 
 .column-info-container {
@@ -56,13 +73,59 @@ body {
 
 #content {
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex: 1 1 auto;
-
-    padding: 2em;
+    padding: 0.5em;
     width: 100%;
+}
+
+ol {
+    margin-top: 0;
+}
+
+ol li {
+    margin-left: 1.5em;
+}
+
+#page-navigation {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:  100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+#page-navigation a {
+    color: var(--tertiary);
+    text-decoration: none;
+    padding: 0.4em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+#page-navigation a:hover, #page-navigation .selected {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#page-navigation .button-href {
+    background: var(--navigation);
+    color: var(--details);
+    padding: 0.4em 2em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#page-navigation .button-href:hover {
+    background: #f26868;
+    color: var(--details);
 }
 
 #footer {
