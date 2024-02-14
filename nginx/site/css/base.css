@@ -129,6 +129,7 @@ h3::after {
     flex: 1;
 }
 
+
 .index-row {
     display: flex;
     flex-flow: row;
@@ -137,6 +138,14 @@ h3::after {
     align-content: center;
     gap: 1em;
     min-width: 6em;
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+.index-row:hover {
+    color: var(--navigation);
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 #page-navigation {

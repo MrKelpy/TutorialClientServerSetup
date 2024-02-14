@@ -93,12 +93,12 @@
             
             $currentNamespaceNesting = count(explode(".", $sectionNamespace));
             $startingPage = $this->_getStartingPage($pages, $sectionNamespace);
-            $separationDots = str_repeat(".", 150);
-            
+            $separationDots = str_repeat(".", 150 - strlen($sectionName)*1.5);
+            $rootNamespace = explode(".", $sectionNamespace)[0];
             
             // Set the root of the list, depending on the nesting level of the current namespace.
             if ($currentNamespaceNesting == 1) $root = "<div class='index-title'><h3>Índice - $sectionName</h3></div><ol><div class='inner-index'>\n";
-            else $root = "<li><ol><div class='index-row'><div>$sectionName</div><div>$separationDots</div><div>$startingPage</div></div>\n";
+            else $root = "<li><ol><a class='index-row' href='index.php?section=$rootNamespace&page=$startingPage'><div>$sectionName</div><div>$separationDots</div><div>$startingPage</div></a>\n";
             
             // Gets an associative array of all the subsection namespaces mapped to their pages
             $subsections = array();
@@ -107,7 +107,7 @@
                 $subsections[$page->pageNamespace][] = $page;
             }
             
-            // Handle the recursive addition of nested sublists for the subsections.
+            // Handle the recursive addition of nested sub lists for the subsections.
             foreach (array_keys($subsections) as $sub) {
                 
                 // Get the nesting level of the current page and the page to be added. The nesting level of "foo.bar", for instance, is 2.
@@ -120,7 +120,7 @@
                 $isDirectSubsection = $subNamespaceNesting == $currentNamespaceNesting + 1;
                 if (!($isDirectSubsection && $pageIsSubsection)) continue;
                 
-                // Recursively build the root sublists nested to the current page.
+                // Recursively build the root sub lists nested to the current page.
                 $root .= $this->_buildListRoot($subsections[$sub][0]->pageSubsectionName, $sub, $pages);
             }
             
@@ -192,8 +192,10 @@
             $navigation .= "<a class='button-href' $backHref>Back</a>";
             
             // For as many pages as there are in the section, build a hyperlink.
-            for ($i = 0; $i < count($pages); $i++) {
-                $navigation .= "<a href='index.php?section=$section_namespace&page=$i'>$i </a>";
+            for ($i = 0; $i <= count($pages); $i++) {
+                
+                if ($i == $current_page) $navigation .= "<a class='selected' href='index.php?section=$section_namespace&page=$i'>$i </a>";
+                else $navigation .= "<a href='index.php?section=$section_namespace&page=$i'>$i </a>";
             }
             
             // Adds the next button if there is a next page and returns the navigation bar.
