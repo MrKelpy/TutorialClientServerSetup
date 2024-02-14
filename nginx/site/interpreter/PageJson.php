@@ -51,9 +51,9 @@
         {
             $this->section = $section;
             $this->pageNamespace = $json['section']['namespace'];
-            $this->pageSubsectionName = array_key_exists('subsection', $json['section']) ? $json['section']['subsection-name'] : $section->name;
-            $this->pagePosition = $json['position'];
-            $this->content = $json['section']['content'];
+            $this->pageSubsectionName = array_key_exists('subsection-name', $json['section']) ? $json['section']['subsection-name'] : $section->name;
+            $this->pagePosition = $json['section']['position'];
+            $this->content = $json['content'];
         }
         
         

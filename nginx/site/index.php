@@ -2,6 +2,7 @@
     require_once 'interpreter/Engine.php';
     require_once 'interpreter/PageSystemReader.php';
     require_once 'interpreter/PageSection.php';
+    require_once 'interpreter/PageJson.php';
     
     use interpreter\engine;
     use interpreter\PageSystemReader;
@@ -71,6 +72,7 @@
     </div>
 
     <div id="page-navigation">
+        <?php echo $interpreter->buildSectionNavigation($_GET['section'], $_GET['page']); ?>
     </div>
 
     <div id="footer">

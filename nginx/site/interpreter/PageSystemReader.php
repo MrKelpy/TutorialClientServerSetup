@@ -141,12 +141,16 @@
                 $json = json_decode(file_get_contents($file), true);
                 if ($json['type'] != 'page') continue;
                 
-                $root_page_namespace = explode(".", $json['namespace'])[0];
+                // Get the root page namespace by grabbing the first nesting level
+                $root_page_namespace = $json['section']['namespace'];
+                
+                if (str_contains($json['section']['namespace'], "."))
+                    $root_page_namespace = explode(".", $root_page_namespace)[0];
                 
                 // If the page is not for the section, skip it.
                 if ($root_page_namespace != $section->namespace) continue;
                 
-                $pages[$json['position']] = new PageJson($json, $section);
+                $pages[strval($json['section']['position'])] = new PageJson($json, $section);
             }
             
             // Sort the pages by their position.

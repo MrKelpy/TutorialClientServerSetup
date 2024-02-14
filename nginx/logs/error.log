@@ -124,3 +124,13 @@ Stack trace:
   thrown in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx\webapp\src\login.php on line 1" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:34557"
 2023/12/27 22:50:24 [emerg] 20072#18420: directive "error_log" is not terminated by ";" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:43
 2023/12/27 22:50:45 [emerg] 18444#8372: directive "error_log" is not terminated by ";" in C:\dev\CSharp\Glowberry\Glowberry-Web\bin\Debug\nginx/conf/nginx.conf:43
+2024/02/13 21:16:11 [emerg] 9884#29476: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:16:27 [emerg] 28180#24300: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:17:05 [emerg] 16116#252: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:21:21 [emerg] 7088#4940: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:24:01 [emerg] 9240#17052: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:24:30 [emerg] 9084#1136: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:25:03 [emerg] 17600#1840: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:25:37 [emerg] 948#16612: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:25:54 [emerg] 11836#4756: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/02/13 21:26:00 [emerg] 1392#16968: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)

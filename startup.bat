@@ -14,5 +14,5 @@ if not exist .\nginx\php\php-cgi.exe (
 start /B /D ".\nginx" .\nginx.exe
 start /B "" php-fcgi.bat
 
-start "" "http://localhost:7070/index.php"
+start "" "http://localhost:12345/index.php"
 endlocal

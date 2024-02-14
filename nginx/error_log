@@ -4724,3 +4724,142 @@ Stack trace:
   thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?page=3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?page=2"
 2024/02/12 16:09:41 [error] 10392#31596: *227 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /site/nginx/site/index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
 2024/02/12 19:43:40 [error] 33764#28480: *13 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 19:57:53 [error] 24476#25988: *21 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:32:03 [error] 24476#25988: *37 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:33:08 [error] 24476#25988: *41 FastCGI sent in stderr: "PHP Warning:  file_get_contents(C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pageshome-section.json): Failed to open stream: No such file or directory in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 79" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:33:21 [error] 24476#25988: *47 FastCGI sent in stderr: "PHP Warning:  file_get_contents(C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pages/home-section.json): Failed to open stream: No such file or directory in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 79
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 80" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:34:29 [error] 24476#25988: *52 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:40:05 [error] 24476#25988: *55 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 20:41:44 [error] 24476#25988: *59 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:38:17 [error] 24476#25988: *69 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:46:11 [error] 24476#25988: *80 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:49:35 [error] 24476#25988: *84 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "interpreter\PageSection" not found in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:80
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(29): interpreter\engine->buildNavigationElements()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 80" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:49:48 [error] 24476#25988: *89 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "interpreter\PageSection" not found in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:80
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(29): interpreter\engine->buildNavigationElements()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 80" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:50:20 [error] 24476#25988: *93 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "interpreter\PageSystemReader" not found in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:26
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): interpreter\engine->buildNavigationElements()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:50:21 [error] 24476#25988: *94 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "interpreter\PageSystemReader" not found in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:26
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): interpreter\engine->buildNavigationElements()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:50:29 [error] 24476#25988: *98 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "interpreter\PageSystemReader" not found in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:26
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): interpreter\engine->buildNavigationElements()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 21:59:26 [error] 24476#25988: *102 FastCGI sent in stderr: "PHP Warning:  Undefined array key "visible" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSection.php on line 44
+PHP Fatal error:  Uncaught TypeError: Cannot assign null to property interpreter\PageSection::$visible of type bool in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSection.php:44
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(80): interpreter\PageSection->__construct()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(30): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSection.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:01:53 [error] 24476#25988: *108 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:07:30 [error] 24476#25988: *144 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:11:26 [error] 24476#25988: *148 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:15:11 [error] 24476#25988: *157 FastCGI sent in stderr: "PHP Parse error:  Duplicate section name: Homedefined in file: C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pages\1-base-installation\section.json in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:15:11 [error] 24476#25988: *157 FastCGI sent in stderr: "PHP Parse error:  Duplicate section name: Homedefined in file: C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pages\1-base-installation\section.json in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:15:45 [error] 24476#25988: *164 FastCGI sent in stderr: "PHP Parse error:  Duplicate section name: Homedefined in file: C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pages\1-base-installation\section.json in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:15:46 [error] 24476#25988: *164 FastCGI sent in stderr: "PHP Parse error:  Duplicate section name: Homedefined in file: C:\dev\HTML\ClientServerSetupTutorial\nginx/site/pages\1-base-installation\section.json in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:20:38 [error] 24476#25988: *184 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:20:41 [error] 24476#25988: *184 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:21:05 [error] 24476#25988: *189 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:21:22 [error] 24476#25988: *195 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:21:30 [error] 24476#25988: *200 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:21:32 [error] 24476#25988: *200 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: arsort(): Argument #2 ($flags) must be of type int, Closure given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:100
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php(100): arsort()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(27): interpreter\PageSystemReader->readSections()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(34): interpreter\engine->buildNavigationElements()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/12 22:22:38 [error] 24476#25988: *207 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"
+2024/02/13 00:31:03 [error] 24476#25988: *637 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\engine::buildPage(): Return value must be of type string, none returned in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:62
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(52): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:31:41 [error] 24476#25988: *641 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\engine::buildPage(): Return value must be of type string, none returned in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:59
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(52): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:36:51 [error] 24476#25988: *647 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\engine::buildPage(): Return value must be of type string, none returned in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:59
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(70): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:36:51 [error] 24476#25988: *647 FastCGI sent in stderr: "PHP Warning:  Undefined array key "home" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 73
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getPagesForSection(): Argument #1 ($section) must be of type interpreter\PageSection, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 74 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:132
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(74): interpreter\PageSystemReader->getPagesForSection()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(55): interpreter\engine->buildIndex()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(70): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:37:26 [error] 24476#25988: *652 FastCGI sent in stderr: "PHP Warning:  Undefined array key "home" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 73
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getPagesForSection(): Argument #1 ($section) must be of type interpreter\PageSection, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 74 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:132
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(74): interpreter\PageSystemReader->getPagesForSection()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(55): interpreter\engine->buildIndex()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(70): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:37:55 [error] 24476#25988: *652 FastCGI sent in stderr: "PHP Warning:  Undefined array key "home" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 73" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:42:33 [error] 24476#25988: *679 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\engine::buildIndex(): Argument #1 ($section) must be of type interpreter\PageSection, string given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 59 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:72
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(59): interpreter\engine->buildIndex()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(70): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070", referrer: "http://localhost:7070/index.php?section=home&page=1"
+2024/02/13 00:44:30 [error] 24476#25988: *706 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 18
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 18 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(18): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:7070"

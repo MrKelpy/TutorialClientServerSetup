@@ -1,0 +1,11 @@
+{
+  "type": "page",
+
+  "section": {
+    "namespace": "base-installation.outro",
+    "subsection-name": "outro",
+    "position": 2
+  },
+
+  "content": {}
+}

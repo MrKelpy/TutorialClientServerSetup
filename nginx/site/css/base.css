@@ -35,6 +35,7 @@ body {
 
 .header-middle {
     display: flex;
+    flex-wrap: wrap;
     flex-flow: row;
     flex: 1 1 auto;
     align-items: center;
@@ -45,10 +46,16 @@ body {
     color: var(--details);
     text-decoration: none;
     padding: 0.4em;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0.2em;
     background: var(--navigation);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
 }
 
 .navigation a:hover {
@@ -83,11 +90,53 @@ body {
 }
 
 ol {
-    margin-top: 0;
+    margin-top: 0.2em;
 }
 
 ol li {
-    margin-left: 1.5em;
+    margin-left: 20px;
+}
+
+h3 {
+    text-align: center;
+    position: relative; /* Required for ::after to be positioned correctly */
+}
+
+h3::after {
+    content: ""; /* Necessary for the pseudo-element to work */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.1em;
+    width: calc(100% + 2em);
+    border-bottom:  1px solid var(--tertiary);
+}
+
+.index-title {
+    margin-bottom: 0.8em;
+}
+
+.index {
+    font-size: 18px;
+}
+
+.inner-index {
+    display: flex;
+    flex-flow: column;
+}
+
+.index-row div:nth-child(1) {
+    flex: 1;
+}
+
+.index-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+    min-width: 6em;
 }
 
 #page-navigation {
@@ -103,11 +152,12 @@ ol li {
 }
 
 #page-navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--tertiary);
     text-decoration: none;
     padding: 0.4em;
-    margin-right: 0.2em;
-    margin-left: 0.2em;
 }
 
 #page-navigation a:hover, #page-navigation .selected {
@@ -115,17 +165,27 @@ ol li {
 }
 
 #page-navigation .button-href {
-    background: var(--navigation);
+    background: var(--tertiary);
     color: var(--details);
     padding: 0.4em 2em;
-    margin-right: 0.2em;
-    margin-left: 0.2em;
+    margin-right: 6em;
+    margin-left: 6em;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-#page-navigation .button-href:hover {
+#page-navigation .button-href[href] {
+    background: var(--secondary);
+}
+
+#page-navigation .button-href[href]:hover {
     background: #f26868;
     color: var(--details);
+    cursor: pointer;
+}
+
+#page-navigation .button-href:hover {
+    background: var(--tertiary);
+    cursor: not-allowed;
 }
 
 #footer {
