@@ -10,17 +10,22 @@
 			"type": "column",
 			"content-line": {
 				"type": "row",
+    
 				"virtualbox-logo": {
 					"type": "image",
 					"source": "assets/vb_logo.png",
-					"text": "VirtualBox Logo"
+					"text": "VirtualBox Logo",
+                    "width": "30%"
 				},
+    
 				"active-directory-logo": {
 					"type": "image",
 					"source": "assets/active_directory.png",
-					"text": "Active Directory Logo"
+					"text": "Active Directory Logo",
+                    "width": "25%"
 				}
 			},
+   
 			"title": {
 				"type": "text",
 				"title": "Instalação e Configuração Server/Client no VirtualBox",

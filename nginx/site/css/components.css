@@ -10,7 +10,7 @@
 }
 
 .row-root {
-    display: inline-flex;
+    display: flex;
     flex-flow: row;
     align-content: center;
     align-items: center;
