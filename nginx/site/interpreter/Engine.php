@@ -62,8 +62,8 @@
             if (count($pages) == 0) return "";
             
             // Otherwise, build the page in itself.
-            $rootType = array_keys($pages[$pagePosition]->content)[0];
-            return $this->_internalBuildPage($pages[$pagePosition]->content[$rootType], $rootType);
+            $root = array_keys($pages[$pagePosition]->content)[0];
+            return $this->_internalBuildPage($pages[$pagePosition]->content[$root], $pages[$pagePosition]->content[$root]['type']);
         }
         
         /**
@@ -85,16 +85,19 @@
             $page .= "<div class='$rootType-root'>";
             $htmlInterpreter = new ComponentHTMLInterpreter();
             
-            // Recursively build the next column page from the content array.
-            if (array_key_exists('column', $content))
-                $page .= $this->_internalBuildPage($content['column'], 'column');
-            
-            // Recursively build the next row page from the content array.
-            if (array_key_exists('row', $content))
-                $page .= $this->_internalBuildPage($content['row'], 'row');
+            // Loops over every component in the content array to check for a column or row component.
+            foreach (array_keys($content) as $component) {
+                
+                if (!is_array($content[$component])) continue;
+                
+                // If the component is a column or row, recursively build the page from it.
+                if ($content[$component]['type'] == 'column' || $content[$component]['type'] == 'row') {
+                    $page .= $this->_internalBuildPage($content[$component], $content[$component]['type']);
+                }
+            }
             
             // Iterates over every component in the content array and adds its html code to the page.
-            $ignore = ['column', 'row', 'space-below', 'space-above'];
+            $ignore = ['type', 'space-below', 'space-above'];
             
             foreach (array_keys($content) as $component) {
                 

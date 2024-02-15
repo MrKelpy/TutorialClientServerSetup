@@ -61,8 +61,9 @@ with a basis on:
 
     content: {
 
-        column OR row: {
+        root-name: {
 
+            type: "column" OR "row" (required)
             space-below: ##,
             space-above: ##,
 
@@ -120,9 +121,12 @@ Formatting legend:
 
 - content: (required)
 
-    - column OR row: (required)
+    - root: (required)
         >   The layout of the page. It can be either a column or a row, and it can contain any number of
         video, image or text elements. This layout can be nested to create more complex structures.
+
+        - type: "column" OR "row" (required)
+            >   The type of the layout.
 
         - space-below: ## (optional)
             >   The amount of break lines below the layout. If not defined, the default margin will be used.

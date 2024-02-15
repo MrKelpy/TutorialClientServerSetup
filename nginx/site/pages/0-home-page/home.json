@@ -9,9 +9,11 @@
 
   "content": {
 
-    "column" : {
+    "root" : {
+      "type": "column",
 
-      "row" : {
+      "content-line" : {
+        "type": "row",
 
         "virtualbox-logo": {
             "type": "image",
