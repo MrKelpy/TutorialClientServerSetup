@@ -32,7 +32,7 @@
             header('Location: index.php?section=' . $_GET['section'] . '&page=' . min(array_keys($pages)));
             
         // The same as the previous condition, but if there's an index, we redirect to the index.
-        } else if (!in_array($_GET['page'], array_keys($pages)) && $section->index)
+        } else if (!in_array($_GET['page'], array_keys($pages)) && $section->index && $_GET['page'] != 0)
             header('Location: index.php?section=' . $_GET['section'] . '&page=0');
     }
     
@@ -76,7 +76,7 @@
             <div class="column-info-container right-side">
             <p>Alexandre Silva Nº3 12ºPGPS2</p>
             <p>Redes de Comunicação, 2023/2024</p>
-            <p>Tutorial de Instalação e Configuração Server/Client no VirtualBox</p>
+            <p>Projeto Final de Redes - Tutorial Server/Client</p>
             </div>
         </div>
 

@@ -1,6 +1,6 @@
 {
-  "type": "section",
-  "name": "Instalação Base",
-  "namespace": "base-installation",
-  "position": 2
+	"type": "section",
+	"name": "Secção Introdutória",
+	"namespace": "base",
+	"position": 2
 }

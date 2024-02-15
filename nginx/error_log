@@ -6950,3 +6950,91 @@ Stack trace:
 #1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
 #2 {main}
   thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=1"
+2024/02/15 08:37:38 [error] 6044#20248: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:37:38 [error] 6044#20248: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:37:55 [error] 6044#20248: *6 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:38:46 [error] 6044#20248: *10 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:39:04 [error] 6044#20248: *10 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:39:42 [error] 6044#20248: *17 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:40:06 [error] 6044#20248: *17 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:40:59 [error] 6044#20248: *20 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:92
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): interpreter\engine->_internalBuildPage()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 92" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:51:19 [error] 6044#20248: *59 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(87): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 08:52:15 [error] 11432#10684: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 08:52:24 [error] 18164#20036: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 09:06:27 [error] 20056#15792: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 09:15:34 [error] 4244#9232: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 09:16:53 [error] 4244#9232: *109 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 09:18:04 [error] 4244#9232: *113 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 09:19:53 [error] 4244#9232: *121 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=1"
+2024/02/15 10:03:19 [error] 14948#4712: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"

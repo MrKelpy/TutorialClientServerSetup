@@ -1,41 +1,34 @@
 {
-  "type": "page",
-
-  "section": {
-    "namespace": "home",
-    "subsection-name": "home",
-    "position": 1
-  },
-
-  "content": {
-
-    "root" : {
-      "type": "column",
-
-      "content-line" : {
-        "type": "row",
-
-        "virtualbox-logo": {
-            "type": "image",
-            "source": "assets/vb_logo.png",
-            "text": "VirtualBox Logo"
-            },
-
-        "active-directory-logo": {
-            "type": "image",
-            "source": "assets/active_directory.png",
-            "text": "Active Directory Logo"
-            }
-        },
-
-      "title": {
-        "type": "text",
-        "title": "Instalação e Configuração Server/Client no VirtualBox",
-        "title-alignment": "center",
-        "force-max-width": "100%",
-        "content": "Por: Alexandre Silva Nº3 12ºPGPS2",
-        "alignment": "center"
-      }
-    }
-  }
+	"type": "page",
+	"section": {
+		"namespace": "home",
+		"subsection-name": "home",
+		"position": 1
+	},
+	"content": {
+		"root": {
+			"type": "column",
+			"content-line": {
+				"type": "row",
+				"virtualbox-logo": {
+					"type": "image",
+					"source": "assets/vb_logo.png",
+					"text": "VirtualBox Logo"
+				},
+				"active-directory-logo": {
+					"type": "image",
+					"source": "assets/active_directory.png",
+					"text": "Active Directory Logo"
+				}
+			},
+			"title": {
+				"type": "text",
+				"title": "Instalação e Configuração Server/Client no VirtualBox",
+				"title-alignment": "center",
+				"force-max-width": "100%",
+				"content": "Por: Alexandre Silva Nº3 12ºPGPS2",
+				"alignment": "center"
+			}
+		}
+	}
 }

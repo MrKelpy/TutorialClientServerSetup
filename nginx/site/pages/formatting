@@ -70,13 +70,19 @@ with a basis on:
             video-name: {
                 "type": "video",
                 "title": "example video title",
-                "source": "example video source"
+                "source": "example video source",
+                "width": ##px,
+                "height": ##px,
+                "border": "#px solid example color",
             },
 
             image-name: {
                 "type": "image",
                 "text": "example image title",
                 "source": "example image source"
+                "width": ##px,
+                "height": ##px,
+                "border": "#px solid example color",
             },
 
             text-name: {
@@ -140,6 +146,15 @@ Formatting legend:
             - source: "./video.mp4" OR "https://video.mp4" (required)
                 >   The source of the video element.
 
+            - width: ##px (optional)
+                >   The width of the video element. If not defined, the default width will be used.
+
+            - height: ##px (optional)
+                >   The height of the video element. If not defined, the default height will be used.
+
+            - border: "#px solid example color" (optional)
+                >   The border of the video element. If not defined, the default border will be used.
+
         - image: (optional)
             >   The image element of the page.
 
@@ -148,6 +163,15 @@ Formatting legend:
 
             - source: "./image.png" OR "https://image.png" (required)
                 >   The source of the image element.
+
+            - width: ##px (optional)
+                >   The width of the image element. If not defined, the default width will be used.
+
+            - height: ##px (optional)
+                >   The height of the image element. If not defined, the default height will be used.
+
+            - border: "#px solid example color" (optional)
+                >   The border of the image element. If not defined, the default border will be used.
 
         - text: (optional)
             >   The text element of the page.

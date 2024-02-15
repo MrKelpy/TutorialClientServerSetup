@@ -1,8 +1,8 @@
 {
-  "type": "section",
-  "name": "Home",
-  "namespace": "home",
-  "position": 1,
-  "visible": false,
-  "index": false
+	"type": "section",
+	"name": "Home",
+	"namespace": "home",
+	"position": 1,
+	"visible": false,
+	"index": false
 }

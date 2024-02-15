@@ -1,0 +1,61 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.basic-setup",
+		"subsection-name": "Setup Básico dos Softwares",
+		"position": 2
+	},
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"text": {
+				"type": "text",
+				"title": "Criar Uma Nova Máquina Virtual",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"image": {
+					"type": "image",
+					"source": "assets/vb_new.png",
+					"text": "Figura 2 - Criar uma Nova Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Vamos começar por criar uma máquina virtual. Para isto, abra o VirtualBox e clique no botão <b>'New'</b> assinalado.",
+					"force-max-width": "25%",
+					"alignment": "justify"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"image": {
+					"type": "image",
+					"source": "assets/vb_vm_setup.png",
+					"text": "Figura 3 - Configurar a Nova Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Após o passo anterior, uma janela será aberta com configurações para a máquina virtual. Para efeitos deste tutorial, o nome desta máquina será <b>'ProjetoRedes'</b>, e a sua localização será a padrão. Seleciona o tipo <b>'Microsoft Windows'</b> com a versão <b>'Windows 2008 (32-bit)'</b>",
+					"force-max-width": "25%",
+					"alignment": "justify"
+				}
+			}
+		}
+	}
+}

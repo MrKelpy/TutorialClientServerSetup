@@ -35,6 +35,7 @@
          */
         private function interpretTextComponent(array $componentData): string
         {
+            // Gets all the data from the JSON array and sets default values if they are not present.
             $title = array_key_exists('title', $componentData) ? $componentData['title'] : '';
             $titleSize = array_key_exists('title-size', $componentData) ? $componentData['title-size'] : '2em';
             $titleColor = array_key_exists('title-color', $componentData) ? $componentData['title-color'] : 'var(--tertiary)';
@@ -46,8 +47,20 @@
             $contentAlignment = array_key_exists('alignment', $componentData) ? $componentData['alignment'] : 'left';
             $maxSize = array_key_exists('force-max-width', $componentData) ? $componentData['force-max-width'] : '50%';
             
+            // Gets the content and replaces any [linked](text) with html a tags.
+            $content = $componentData['content'];
+            preg_match_all('/\[.*?]\(.*?\)/m', $content, $matches);
+            
+            // Replaces the matches with the correct html tags.
+            foreach ($matches[0] as $match) {
+                preg_match('/\[(.*?)\]/m', $match, $text);
+                preg_match('/\((.*?)\)/m', $match, $link);
+                
+                $content = str_replace($match, "<a href='$link[1]'>$text[1]</a>", $content);
+            }
+            
             $element = "<div class='text-component' style='max-width: $maxSize'><h3 style='font-size: $titleSize; color: $titleColor; text-align: $titleAlignment; text-decoration: $titleDecorations;'>$title</h3>";
-            $element .= "<p style='font-size: $contentSize; color: $contentColor; text-align: $contentAlignment; text-decoration: $contentDecorations;'>{$componentData['content']}</p>";
+            $element .= "<p style='font-size: $contentSize; color: $contentColor; text-align: $contentAlignment; text-decoration: $contentDecorations;'>{$content}</p>";
             
             return $element . "</div>";
         }
@@ -61,7 +74,11 @@
          */
         private function interpretImageComponent(array $componentData): string {
             
-            return "<img class='img-component' src='{$componentData['source']}' alt='{$componentData['text']}''>";
+            $width = array_key_exists('width', $componentData) ? $componentData['width'] : 'inherit';
+            $height = array_key_exists('height', $componentData) ? $componentData['height'] : 'inherit';
+            $border = array_key_exists('border', $componentData) ? $componentData['border'] : 'none';
+            
+            return "<img class='img-component' style='width: $width; height: $height; border: $border' src='{$componentData['source']}' alt='{$componentData['text']}''>";
         }
         
         /**
@@ -73,7 +90,11 @@
          */
         private function interpretVideoComponent(array $componentData): string{
             
-            return "<video class='video-component' controls>
+            $width = array_key_exists('width', $componentData) ? $componentData['width'] : 'inherit';
+            $height = array_key_exists('height', $componentData) ? $componentData['height'] : 'inherit';
+            $border = array_key_exists('border', $componentData) ? $componentData['border'] : 'none';
+            
+            return "<video class='video-component' style='width: $width; height: $height; border: $border' controls>
                         <source src='{$componentData['source']}' type='video/mp4'>
                     </video>";
         }

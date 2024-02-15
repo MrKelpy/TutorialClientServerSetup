@@ -81,32 +81,29 @@
             $spaceBelow = array_key_exists('space-below', $content) ? $content['space-below'] : 0;
             $spaceAbove = array_key_exists('space-above', $content) ? $content['space-above'] : 0;
             
-            $page .= str_repeat("<br>", $spaceAbove);
+            $page .= str_repeat("<br>&nbsp;\n", $spaceAbove);
             $page .= "<div class='$rootType-root'>";
             $htmlInterpreter = new ComponentHTMLInterpreter();
+            
+            // Iterates over every component in the content array and adds its html code to the page.
+            $ignore = ['type', 'space-below', 'space-above'];
             
             // Loops over every component in the content array to check for a column or row component.
             foreach (array_keys($content) as $component) {
                 
                 if (!is_array($content[$component])) continue;
+                if (in_array($component, $ignore)) continue;
                 
                 // If the component is a column or row, recursively build the page from it.
                 if ($content[$component]['type'] == 'column' || $content[$component]['type'] == 'row') {
                     $page .= $this->_internalBuildPage($content[$component], $content[$component]['type']);
                 }
-            }
-            
-            // Iterates over every component in the content array and adds its html code to the page.
-            $ignore = ['type', 'space-below', 'space-above'];
-            
-            foreach (array_keys($content) as $component) {
                 
-                if (in_array($component, $ignore)) continue;
                 $page .= $htmlInterpreter->interpretJsonComponent($content[$component]);
             }
             
             // If the root type is a column, add the column div.
-            return $page . "</div>" . str_repeat("<br>", $spaceBelow);
+            return $page . "</div>" . str_repeat("<br>&nbsp;\n", $spaceBelow);
         }
         
         /**

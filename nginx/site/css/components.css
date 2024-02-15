@@ -23,8 +23,6 @@
     background: var(--tertiary);
     padding: 0.2em;
     margin: 1em;
-    min-width: 23em;
-    max-height: 15em;
     width: auto;
     height: auto;
 }
@@ -33,12 +31,15 @@
     border-radius: 5px;
     padding: 0.2em;
     margin: 1em;
-    max-width: 23em;
-    max-height: 15em;
     width: auto;
     height: auto;
 }
 
 .text-component {
     word-wrap: break-word;
+}
+
+.text-component a {
+    color: #4400d6;
+    text-decoration: underline;
 }

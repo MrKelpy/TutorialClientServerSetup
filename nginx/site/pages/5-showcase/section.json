@@ -1,6 +1,6 @@
 {
-  "type": "section",
-  "name": "Showcase",
-  "namespace": "showcase",
-  "position": 6
+	"type": "section",
+	"name": "Showcase",
+	"namespace": "showcase",
+	"position": 6
 }
