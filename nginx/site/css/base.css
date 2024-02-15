@@ -86,7 +86,8 @@ body {
     align-items: center;
     flex: 1 1 auto;
     padding: 0.5em;
-    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 ol {
@@ -97,12 +98,12 @@ ol li {
     margin-left: 20px;
 }
 
-h3 {
+.index-header {
     text-align: center;
     position: relative; /* Required for ::after to be positioned correctly */
 }
 
-h3::after {
+.index-header::after {
     content: ""; /* Necessary for the pseudo-element to work */
     position: absolute;
     left: 50%;

@@ -63,33 +63,33 @@ with a basis on:
 
         column OR row: {
 
-            audio: {
-                "title": "example audio title",
-                "source": "example audio source"
-            },
+            space-below: ##,
+            space-above: ##,
 
-            video: {
+            video-name: {
+                "type": "video",
                 "title": "example video title",
                 "source": "example video source"
             },
 
-            image: {
-                "title": "example image title",
+            image-name: {
+                "type": "image",
+                "text": "example image title",
                 "source": "example image source"
             },
 
-            text: {
+            text-name: {
+                "type": "text",
                 "title": "example text title",
                 "content": "example text content",
                 "title-size": ##px,
+                "title-alignment": "left, center, right or justify",
+                "title-decorations": "example: bold, italic, underline, strikethrough, or any combination of them",
+                "title-color": "example color",
                 "content-size": ##px
-            }
-
-            -: {
-                "vertical-divide-before": boolean,
-                "vertical-divide-after": boolean,
-                "horizontal-divide-before": boolean,
-                "horizontal-divide-after": boolean
+                "decorations": "example: bold, italic, underline, strikethrough, or any combination of them",
+                "color": "example color",
+                "alignment": "left, center, right or justify"
             }
 
         }
@@ -121,22 +121,16 @@ Formatting legend:
 
     - column OR row: (required)
         >   The layout of the page. It can be either a column or a row, and it can contain any number of
-        audio, video, image or text elements. This layout can be nested to create more complex structures.
+        video, image or text elements. This layout can be nested to create more complex structures.
 
-        - audio: (optional)
-            >   The audio element of the page.
+        - space-below: ## (optional)
+            >   The amount of break lines below the layout. If not defined, the default margin will be used.
 
-            - title: "example audio title" (required)
-                >   The title of the audio element.
-
-            - source: "./audio.mp3" OR "https://audio.mp3" (required)
-                >   The source of the audio element.
+        - space-above: ## (optional)
+            >   The amount of break lines above the layout. If not defined, the default margin will be used.
 
         - video: (optional)
             >   The video element of the page.
-
-            - title: "example video title" (required)
-                >   The title of the video element.
 
             - source: "./video.mp4" OR "https://video.mp4" (required)
                 >   The source of the video element.
@@ -144,8 +138,8 @@ Formatting legend:
         - image: (optional)
             >   The image element of the page.
 
-            - title: "example image title" (required)
-                >   The title of the image element.
+            - text: "example image title" (required)
+                >   The alt text of the image element.
 
             - source: "./image.png" OR "https://image.png" (required)
                 >   The source of the image element.
@@ -156,14 +150,29 @@ Formatting legend:
             - title: "example text title" (optional)
                 >   The title of the text element. If not defined, the title will not be displayed.
 
-            - content: "lorem ipsum dolor sit amet" (optional)
-                >   The content of the text element.
+            - title-alignment: "left, center, right or justify" (optional)
+                >   The alignment of the title of the text element. If not defined, the default alignment will be used.
 
-            - title-size: ##px (optional)
+             - title-size: ##px (optional)
                 >   The size of the title of the text element. If not defined, the default size will be used.
+
+            - title-decorations: "example: bold, italic, underline, strikethrough, or any combination of them" (optional)
+                >   The decorations of the title of the text element. If not defined, the default decorations will be used.
+
+            - title-color: "example color" (optional)
+                >   The color of the title of the text element. If not defined, the default color will be used.
+
+            - content: "lorem ipsum dolor sit amet" (required)
+                >   The content of the text element.
 
             - content-size: ##px (optional)
                 >   The size of the content of the text element. If not defined, the default size will be used.
 
-        - vertical/horizontal-divider-before/after: (optional)
-                > A vertical/horizontal divider that can be placed before or after the element it is defined on.
+            - decorations: "example: bold, italic, underline, strikethrough, or any combination of them" (optional)
+                >   The decorations of the text element. If not defined, the default decorations will be used.
+
+            - color: "example color" (optional)
+                >   The color of the text element. If not defined, the default color will be used.
+
+            - alignment: "left, center, right or justify" (optional)
+                >   The alignment of the text element. If not defined, the default alignment will be used.

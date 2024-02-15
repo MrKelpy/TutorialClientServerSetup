@@ -44,24 +44,67 @@
         /**
          * Builds the web page for a given section and position (page), from the declared
          * section components in the json page system.
+         *
          * @param string $section The name of the section to build the page for.
-         * @param string $page The position of the section to build the page for.
+         * @param string $pagePosition The position of the section to build the page for.
          *
          * @return void The html code string for the page.
          */
-        public function buildPage(string $section_namespace, string $page): string {
-            
-            $webpage = '';
+        public function buildPage(string $section_namespace, string $pagePosition): string {
             
             // Gets the section from the namespace.
             $reader = new PageSystemReader();
             $section = $reader->getSectionByNamespace($section_namespace);
+            $pages = $reader->getPagesForSection($section);
+            $pagePosition = intval($pagePosition);
             
             // If the page is 0, build the index.
-            if ($page == 0 && $section->index) $webpage .= $this->buildIndex($section);
+            if ($pagePosition == 0 && $section->index) return $this->buildIndex($section);
+            if (count($pages) == 0) return "";
             
             // Otherwise, build the page in itself.
-            return $webpage;
+            $rootType = array_keys($pages[$pagePosition]->content)[0];
+            return $this->_internalBuildPage($pages[$pagePosition]->content[$rootType], $rootType);
+        }
+        
+        /**
+         * Builds the page from the content array, which is the result of the interpretation of the json page system.
+         * This method is recursive.
+         * @param array $content The content array to build the page from.
+         * @param string $rootType Either 'column' or 'row', depending on the root type of the page.
+         *
+         * @return string The html code string for the page.
+         */
+        private function _internalBuildPage(array $content, string $rootType): string {
+            
+            $page = "";
+            
+            $spaceBelow = array_key_exists('space-below', $content) ? $content['space-below'] : 0;
+            $spaceAbove = array_key_exists('space-above', $content) ? $content['space-above'] : 0;
+            
+            $page .= str_repeat("<br>", $spaceAbove);
+            $page .= "<div class='$rootType-root'>";
+            $htmlInterpreter = new ComponentHTMLInterpreter();
+            
+            // Recursively build the next column page from the content array.
+            if (array_key_exists('column', $content))
+                $page .= $this->_internalBuildPage($content['column'], 'column');
+            
+            // Recursively build the next row page from the content array.
+            if (array_key_exists('row', $content))
+                $page .= $this->_internalBuildPage($content['row'], 'row');
+            
+            // Iterates over every component in the content array and adds its html code to the page.
+            $ignore = ['column', 'row', 'space-below', 'space-above'];
+            
+            foreach (array_keys($content) as $component) {
+                
+                if (in_array($component, $ignore)) continue;
+                $page .= $htmlInterpreter->interpretJsonComponent($content[$component]);
+            }
+            
+            // If the root type is a column, add the column div.
+            return $page . "</div>" . str_repeat("<br>", $spaceBelow);
         }
         
         /**
@@ -97,7 +140,7 @@
             $rootNamespace = explode(".", $sectionNamespace)[0];
             
             // Set the root of the list, depending on the nesting level of the current namespace.
-            if ($currentNamespaceNesting == 1) $root = "<div class='index-title'><h3>Índice - $sectionName</h3></div><ol><div class='inner-index'>\n";
+            if ($currentNamespaceNesting == 1) $root = "<div class='index-title'><h3 class='index-header'>Índice - $sectionName</h3></div><ol><div class='inner-index'>\n";
             else $root = "<li><ol><a class='index-row' href='index.php?section=$rootNamespace&page=$startingPage'><div>$sectionName</div><div>$separationDots</div><div>$startingPage</div></a>\n";
             
             // Gets an associative array of all the subsection namespaces mapped to their pages
@@ -180,9 +223,10 @@
             
             $pages = $reader->getPagesForSection($section);
             $navigation = '';
+                $page_total = $section->index ? count($pages) + 1 : count($pages);
             
             // If there is only one page, there is no need for a navigation bar.
-            if (count($pages) <= 1) return "";
+            if ($page_total <= 1) return "";
             
             // Adds the back button if there is a previous page.
             $back = $current_page - 1;
@@ -192,7 +236,7 @@
             $navigation .= "<a class='button-href' $backHref>Back</a>";
             
             // For as many pages as there are in the section, build a hyperlink.
-            for ($i = 0; $i <= count($pages); $i++) {
+            for ($i = 0; $i < $page_total; $i++) {
                 
                 if ($i == $current_page) $navigation .= "<a class='selected' href='index.php?section=$section_namespace&page=$i'>$i </a>";
                 else $navigation .= "<a href='index.php?section=$section_namespace&page=$i'>$i </a>";
@@ -202,7 +246,7 @@
             $next = $current_page + 1;
             
             // If there is a next page, add the hyperlink for the button.
-            $nextHref = $next < count($pages) ? "href='index.php?section=$section_namespace&page=$next'" : "";
+            $nextHref = $next < $page_total ? "href='index.php?section=$section_namespace&page=$next'" : "";
             $navigation .= "<a class='button-href' $nextHref>Next</a>";
             
             return $navigation;

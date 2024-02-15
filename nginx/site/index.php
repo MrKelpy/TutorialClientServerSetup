@@ -3,6 +3,7 @@
     require_once 'interpreter/PageSystemReader.php';
     require_once 'interpreter/PageSection.php';
     require_once 'interpreter/PageJson.php';
+    require_once 'interpreter/ComponentHTMLInterpreter.php';
     
     use interpreter\engine;
     use interpreter\PageSystemReader;
@@ -37,6 +38,7 @@
     <title>Tutorial - Cliente/Servidor</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
 </head>
 <body>
 
@@ -44,7 +46,9 @@
     <div id="header">
 
         <div class="division-container">
-            <img src="./assets/angel_devil.png" alt="logo" id="logo">
+            <a href="index.php?section=home&page=0">
+                <img src="./assets/angel_devil.png" alt="logo" id="logo">
+            </a>
             <div class="vertical-divider header-divider"></div>
         </div>
         

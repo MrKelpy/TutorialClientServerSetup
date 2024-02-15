@@ -6051,3 +6051,31 @@ Stack trace:
 #0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
 #1 {main}
   thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/14 11:26:34 [error] 2564#15060: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/14 11:27:15 [error] 2564#15060: *25 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/14 11:33:23 [error] 2564#15060: *87 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getPagesForSection(): Argument #1 ($section) must be of type interpreter\PageSection, false given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:132
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getPagesForSection()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation.aquela&page=5 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/14 11:33:26 [error] 2564#15060: *87 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getPagesForSection(): Argument #1 ($section) must be of type interpreter\PageSection, false given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:132
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getPagesForSection()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation.outro.aquele&page=4 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/14 11:34:20 [error] 2564#15060: *98 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 96" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=2"
+2024/02/14 11:35:37 [error] 2564#15060: *132 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getPagesForSection(): Argument #1 ($section) must be of type interpreter\PageSection, false given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:132
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getPagesForSection()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation.outro&page=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"

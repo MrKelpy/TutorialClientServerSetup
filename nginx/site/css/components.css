@@ -1,0 +1,45 @@
+@import url("pallette.css");
+
+.column-root {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row-root {
+    display: inline-flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-component {
+    border-radius: 5px;
+    background: var(--tertiary);
+    padding: 0.2em;
+    margin: 1em;
+    min-width: 23em;
+    max-height: 15em;
+    width: auto;
+    height: auto;
+}
+
+.img-component {
+    border-radius: 5px;
+    padding: 0.2em;
+    margin: 1em;
+    max-width: 23em;
+    max-height: 15em;
+    width: auto;
+    height: auto;
+}
+
+.text-component {
+    max-width: 50%;
+    word-wrap: break-word;
+}

@@ -2,10 +2,33 @@
   "type": "page",
 
   "section": {
-    "namespace": "base-installation",
+    "namespace": "base-installation.introduction",
     "subsection-name": "este",
     "position": 1
   },
 
-  "content": {}
+  "content": {
+
+    "column": {
+
+      "row": {
+
+        "image-1": {
+          "type": "image",
+          "text": "test",
+          "source": "/assets/aefc.png"
+        },
+
+        "text": {
+          "type": "text",
+          "title-alignment": "center",
+          "title": "test",
+          "content": "hiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "alignment": "center"
+        }
+      }
+
+    }
+
+  }
 }
