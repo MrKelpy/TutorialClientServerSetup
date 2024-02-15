@@ -13,21 +13,33 @@
     
     // If the section or the page are not set, redirect to the home page.
     if (!isset($_GET['section']) || !isset($_GET['page'])) {
-        header('Location: index.php?section=home&page=0');
+        header('Location: index.php?section=home&page=1');
     }
     
     // If the page exceeds the number of pages in the section, redirect them to the last page.
     $section = $reader->getSectionByNamespace($_GET['section']);
     $pages = $reader->getPagesForSection($section);
     
-    if ($_GET['page'] > count($pages)) {
-        header('Location: index.php?section=' . $_GET['section'] . '&page=' . count($pages));
+    if (count($pages) != 0) {  // Edge case: if there are no pages, there's no need for all those checks.
+        
+        // In case the page requested is out of scope (positively), redirect to the last page.
+        if ($_GET['page'] > count($pages)) {
+            header('Location: index.php?section=' . $_GET['section'] . '&page=' . count($pages));
+        
+        // If the previous condition is not met, but the page is not in the array of pages, and there's no index
+        // it means that the page is too low, so we redirect to the first page.
+        } else if (!in_array($_GET['page'], array_keys($pages)) && !$section->index) {
+            header('Location: index.php?section=' . $_GET['section'] . '&page=' . min(array_keys($pages)));
+            
+        // The same as the previous condition, but if there's an index, we redirect to the index.
+        } else if (!in_array($_GET['page'], array_keys($pages)) && $section->index)
+            header('Location: index.php?section=' . $_GET['section'] . '&page=0');
     }
     
-    // If the page is less than 0, redirect them to the first page.
-    if ($_GET['page'] < 0) {
-        header('Location: index.php?section=' . $_GET['section'] . '&page=0');
-    }
+    // If the page isn't 0, set it to 0. This will either send the user to the index page or to a blank page.
+    else if ($_GET['page'] != 0)
+        header("Location: index.php?section={$_GET['section']}&page=0");
+
         
 ?>
 

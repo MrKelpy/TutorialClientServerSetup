@@ -90,6 +90,7 @@ with a basis on:
                 "decorations": "example: bold, italic, underline, strikethrough, or any combination of them",
                 "color": "example color",
                 "alignment": "left, center, right or justify"
+                "force-max-width": ##%
             }
 
         }
@@ -176,3 +177,6 @@ Formatting legend:
 
             - alignment: "left, center, right or justify" (optional)
                 >   The alignment of the text element. If not defined, the default alignment will be used.
+
+            - force-max-width: ##% (optional)
+                >   The maximum width of the text element, overriding the default value.

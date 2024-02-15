@@ -33,8 +33,7 @@
                 $section = $sections[$section_name];
                 if (!$section->visible) continue;
                 
-                $namespace = str_replace('.', '+', $section->namespace);
-                $navigation .= "<a href='index.php?section=$namespace&page=0'>$section_name</a>";
+                $navigation .= "<a href='index.php?section=$section->namespace&page=0'>$section_name</a>";
             }
             
             return $navigation;

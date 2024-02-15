@@ -35,7 +35,6 @@
          */
         private function interpretTextComponent(array $componentData): string
         {
-            
             $title = array_key_exists('title', $componentData) ? $componentData['title'] : '';
             $titleSize = array_key_exists('title-size', $componentData) ? $componentData['title-size'] : '2em';
             $titleColor = array_key_exists('title-color', $componentData) ? $componentData['title-color'] : 'var(--tertiary)';
@@ -45,8 +44,9 @@
             $contentDecorations = array_key_exists('decorations', $componentData) ? $componentData['decorations'] : '';
             $contentColor = array_key_exists('color', $componentData) ? $componentData['color'] : 'var(--tertiary)';
             $contentAlignment = array_key_exists('alignment', $componentData) ? $componentData['alignment'] : 'left';
+            $maxSize = array_key_exists('force-max-width', $componentData) ? $componentData['force-max-width'] : '50%';
             
-            $element = "<div class='text-component'><h3 style='font-size: $titleSize; color: $titleColor; text-align: $titleAlignment; text-decoration: $titleDecorations;'>$title</h3>";
+            $element = "<div class='text-component' style='max-width: $maxSize'><h3 style='font-size: $titleSize; color: $titleColor; text-align: $titleAlignment; text-decoration: $titleDecorations;'>$title</h3>";
             $element .= "<p style='font-size: $contentSize; color: $contentColor; text-align: $contentAlignment; text-decoration: $contentDecorations;'>{$componentData['content']}</p>";
             
             return $element . "</div>";

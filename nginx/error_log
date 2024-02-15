@@ -6079,3 +6079,650 @@ Stack trace:
 #0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getPagesForSection()
 #1 {main}
   thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 132" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation.outro&page=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:21:59 [error] 2564#15060: *591 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:21:59 [error] 2564#15060: *591 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64
+PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64
+PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:64
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(64): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(74): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:28:11 [error] 2564#15060: *653 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Cannot use object of type interpreter\PageJson as array in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:64
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(74): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:30:16 [error] 2564#15060: *664 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:30:34 [error] 2564#15060: *668 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:31:00 [error] 2564#15060: *673 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Cannot use object of type interpreter\PageJson as array in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(74): interpreter\engine->buildPage()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:32:04 [error] 2564#15060: *678 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:33:13 [error] 2564#15060: *682 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 19 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(19): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:33:13 [error] 2564#15060: *682 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(74): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:33:25 [error] 2564#15060: *689 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:33:28 [error] 2564#15060: *690 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:33:28 [error] 2564#15060: *690 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:34:19 [error] 2564#15060: *700 FastCGI sent in stderr: "PHP Warning:  Undefined array key "text" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:34:23 [error] 2564#15060: *700 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:34:23 [error] 2564#15060: *700 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:34:28 [error] 2564#15060: *707 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:34:28 [error] 2564#15060: *707 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:35:07 [error] 2564#15060: *712 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:35:23 [error] 2564#15060: *712 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:36:11 [error] 2564#15060: *727 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:36:12 [error] 2564#15060: *727 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:36:18 [error] 2564#15060: *732 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 00:37:47 [error] 2564#15060: *741 FastCGI sent in stderr: "PHP Warning:  Undefined array key "text" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:39:21 [error] 2564#15060: *755 FastCGI sent in stderr: "PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:39:53 [error] 2564#15060: *763 FastCGI sent in stderr: "PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:54:36 [error] 2564#15060: *907 FastCGI sent in stderr: "PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 00:54:37 [error] 2564#15060: *907 FastCGI sent in stderr: "PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:04:26 [error] 2564#15060: *976 FastCGI sent in stderr: "PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:04:26 [error] 2564#15060: *976 FastCGI sent in stderr: "PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:18:34 [error] 2564#15060: *1086 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: interpreter\ComponentHTMLInterpreter::interpretJsonComponent(): Argument #1 ($componentData) must be of type array, string given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 98 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php:18
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(98): interpreter\ComponentHTMLInterpreter->interpretJsonComponent()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(92): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#3 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#4 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:19:42 [error] 2564#15060: *1086 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:20:53 [error] 2564#15060: *1091 FastCGI sent in stderr: "PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21
+PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21
+PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21
+PHP Fatal error:  Uncaught TypeError: interpreter\ComponentHTMLInterpreter::interpretJsonComponent(): Argument #1 ($componentData) must be of type array, string given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 100 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php:18
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(100): interpreter\ComponentHTMLInterpreter->interpretJsonComponent()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(92): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#3 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#4 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:21:36 [error] 2564#15060: *1092 FastCGI sent in stderr: "PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21
+PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21
+PHP Warning:  Undefined array key "type" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:29:41 [error] 2564#15060: *1103 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: str_repeat(): Argument #2 ($times) must be of type int, string given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:85
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(85): str_repeat()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:29:54 [error] 2564#15060: *1104 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: str_repeat(): Argument #2 ($times) must be of type int, string given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:85
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(85): str_repeat()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:30:07 [error] 2564#15060: *1106 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: str_repeat(): Argument #2 ($times) must be of type int, string given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:85
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(85): str_repeat()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:30:19 [error] 2564#15060: *1106 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: str_repeat(): Argument #2 ($times) must be of type int, string given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:85
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(85): str_repeat()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(67): interpreter\engine->_internalBuildPage()
+#2 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#3 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 85" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=base-installation&page=0"
+2024/02/15 01:41:49 [error] 2564#15060: *1136 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=0"
+2024/02/15 01:41:54 [error] 2564#15060: *1139 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=0"
+2024/02/15 01:42:08 [error] 2564#15060: *1142 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:66
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(66): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=0"
+2024/02/15 01:42:12 [error] 2564#15060: *1145 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:46:42 [error] 2564#15060: *1174 FastCGI sent in stderr: "PHP Warning:  Undefined array key "source" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 64
+PHP Warning:  Undefined array key "text" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 64
+PHP Warning:  Undefined array key "source" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 64
+PHP Warning:  Undefined array key "text" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 64
+PHP Warning:  Undefined array key "content" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\ComponentHTMLInterpreter.php on line 50" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:54:03 [error] 2564#15060: *1221 FastCGI sent in stderr: "PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 86
+PHP Warning:  Trying to access array offset on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 142" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:56:09 [error] 2564#15060: *1222 FastCGI sent in stderr: "PHP Warning:  Undefined array key 7 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=7 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:56:09 [error] 2564#15060: *1222 FastCGI sent in stderr: "PHP Warning:  Undefined array key 1 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:57:28 [error] 2564#15060: *1240 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:59:56 [error] 2564#15060: *1245 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 01:59:58 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:00:42 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:00:45 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(75): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:01:23 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php:28
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): min()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=1"
+2024/02/15 02:01:25 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php:28
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): min()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=1"
+2024/02/15 02:02:09 [error] 2564#15060: *1246 FastCGI sent in stderr: "PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php:28
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(28): min()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=base-installation&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345", referrer: "http://localhost:12345/index.php?section=home&page=1"
+2024/02/15 02:03:45 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:46 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:46 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:46 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:46 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:46 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:47 [error] 2564#15060: *1282 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:47 [error] 2564#15060: *1282 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:03:50 [error] 2564#15060: *1360 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:05 [error] 2564#15060: *1364 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:08 [error] 2564#15060: *1364 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:17 [error] 2564#15060: *1364 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key "section" in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20
+PHP Fatal error:  Uncaught TypeError: interpreter\PageSystemReader::getSectionByNamespace(): Argument #1 ($namespace) must be of type string, null given, called in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 20 and defined in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php:112
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(20): interpreter\PageSystemReader->getSectionByNamespace()
+#1 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\PageSystemReader.php on line 112" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:31 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:32 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:32 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:32 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:32 [error] 17952#18732: *1 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:04:59 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:02 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:02 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:02 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:02 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:02 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:03 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:03 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:03 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:03 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:05 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:05 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:05 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:05 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:06 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:06 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:06 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:06 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:06 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:05:07 [error] 17952#18732: *23 FastCGI sent in stderr: "PHP Warning:  Undefined array key 0 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Warning:  Attempt to read property "content" on null in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65
+PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php:65
+Stack trace:
+#0 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php(65): array_keys()
+#1 C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php(76): interpreter\engine->buildPage()
+#2 {main}
+  thrown in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\interpreter\Engine.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php?section=home&page=0 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:06:06 [error] 17952#18732: *67 FastCGI sent in stderr: "PHP Parse error:  Unclosed '{' on line 30 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:06:09 [error] 17952#18732: *71 FastCGI sent in stderr: "PHP Parse error:  Unclosed '{' on line 30 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"
+2024/02/15 02:06:14 [error] 17952#18732: *75 FastCGI sent in stderr: "PHP Parse error:  Unclosed '{' on line 30 in C:\dev\HTML\ClientServerSetupTutorial\nginx\site\index.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "localhost:12345"

@@ -1,0 +1,39 @@
+{
+  "type": "page",
+
+  "section": {
+    "namespace": "home",
+    "subsection-name": "home",
+    "position": 1
+  },
+
+  "content": {
+
+    "column" : {
+
+      "row" : {
+
+        "virtualbox-logo": {
+            "type": "image",
+            "source": "assets/vb_logo.png",
+            "text": "VirtualBox Logo"
+            },
+
+        "active-directory-logo": {
+            "type": "image",
+            "source": "assets/active_directory.png",
+            "text": "Active Directory Logo"
+            }
+        },
+
+      "title": {
+        "type": "text",
+        "title": "Tutorial de  Setup do Client/Server com Active Directory",
+        "title-alignment": "center",
+        "force-max-width": "100%",
+        "content": "Por: Alexandre Silva Nº3 12ºPGPS2",
+        "alignment": "center"
+      }
+    }
+  }
+}
