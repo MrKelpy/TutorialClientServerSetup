@@ -28,7 +28,7 @@
 
       "title": {
         "type": "text",
-        "title": "Tutorial de  Setup do Client/Server com Active Directory",
+        "title": "Instalação e Configuração Server/Client no VirtualBox",
         "title-alignment": "center",
         "force-max-width": "100%",
         "content": "Por: Alexandre Silva Nº3 12ºPGPS2",

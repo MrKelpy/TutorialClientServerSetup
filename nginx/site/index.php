@@ -76,7 +76,7 @@
             <div class="column-info-container right-side">
             <p>Alexandre Silva Nº3 12ºPGPS2</p>
             <p>Redes de Comunicação, 2023/2024</p>
-            <p>Tutorial - Setup do Client/Server com Active Directory</p>
+            <p>Tutorial de Instalação e Configuração Server/Client no VirtualBox</p>
             </div>
         </div>
 

@@ -3,6 +3,6 @@
   "name": "Home",
   "namespace": "home",
   "position": 1,
-  "visible": true,
+  "visible": false,
   "index": false
 }

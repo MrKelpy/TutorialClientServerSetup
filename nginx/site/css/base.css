@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
 }
 
+
 #logo {
     height: 6em;
     width: 6em;
@@ -31,6 +32,16 @@ body {
 .division-container {
     display: flex;
     flex-flow: row;
+}
+
+.division-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.division-container a:hover {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .header-middle {
@@ -54,8 +65,8 @@ body {
 .navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation a:hover {
@@ -70,12 +81,12 @@ body {
     align-content: center;
     text-align: left;
     font-size: 14px;
-    margin: 1em
+    margin: 1em;
 }
 
 .column-info-container.right-side {
     text-align: right;
-    color: var(--details)
+    color: var(--details);
 }
 
 #content {
