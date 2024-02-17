@@ -1,0 +1,62 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.client-setup",
+		"subsection-name": "Criação e Setup Básico do Cliente (VM)",
+		"position": 6
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Finalização do Setup da Máquina Virtual do Cliente",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_client_partitions_1.png",
+					"text": "Figura 15 - Criar o VM do cliente",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Assim que o cliente for ligado, esta tela azul será exibida. <b>Don't panic! (And carry a towel.)</b> Esta é apenas uma tela parecida com a BIOS, uma tela de configuração. Aqui estará disponível uma interface com o disco sem partição. Teremos que o particionar para poder ter memória interna, antes de usar o cliente. Para isto, avançaremos. Clique <b>ENTER</b>.",
+					"border": "0.12em solid var(--tertiary)",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_client_partitions_2.png",
+					"text": "Figura 16 - Seleção do sistema NFTS",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Aqui será-nos apresentado o menu de seleção do sistema de arquivos. Selecione a terceira opção <b>'NTFS'</b> (Não a rápida, a completa). <br><br> A ponto de curiosidade, o sistema NFTS está a ser escolhido pois esse é o sistema de ficheiros do Windows, com as (argumentávelmente) melhores funcionalidades e detalhes para ficheiros <b>no windows</b>. Entre NTFS, FAT, FAT32, etc... Normalmente quando se trabalha com Windows, escolhe-se NTFS. ",
+					"border": "0.12em solid var(--tertiary)",
+					"force-max-width": "25%"
+				}
+			}
+			
+			
+		}
+	}
+}

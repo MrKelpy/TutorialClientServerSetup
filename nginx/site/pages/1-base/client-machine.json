@@ -1,0 +1,61 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.client-setup",
+		"subsection-name": "Criação e Setup Básico do Cliente (VM)",
+		"position": 5
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Criação da Máquina Virtual do Cliente",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_client.png",
+					"text": "Figura 13 - Criar o VM do cliente",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Agora que temos o servidor pronto a ser configurado, criamos também a máquina virtual do cliente. Os passos são <b>praticamente os mesmos</b>, diferenciados apenas nos pontos que aqui serão apresentados.",
+					"border": "0.12em solid var(--tertiary)",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_client_image.png",
+					"text": "Figura 14 - Inserir a imagem do cliente",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "35%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Depois de repetir os passos da instalação do servidor para o cliente, é necessário usar a imagem do cliente para configurar o sistema operativo. Esta está disponível na [introdução deste capítulo](index.php?section=base&page=1) ou, também, [aqui](https://drive.google.com/file/d/1KAvt4SaFBQxh7Sn_-0a7PQlzCL0q2I5T/view?usp=drive_link).<br><br>Relembrando que para configurar a imagem do sistema operativo é necessário aceder às <b>Settings > Storage</b> e selecionar a partição de nome <b>'Empty'</b>",
+					"border": "0.12em solid var(--tertiary)",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

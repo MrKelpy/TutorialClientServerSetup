@@ -1,0 +1,53 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.introduction",
+		"subsection-name": "Introdução",
+		"position": 1
+	},
+	"content": {
+  
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Introdução",
+				"title-alignment": "center",
+				"content": "",
+				"force-max-width": "55%"
+			},
+			
+			"first-paragraph": {
+				"type": "text",
+				"content": "Neste tutorial vamos fazer a instalação de vários softwares no Windows Server 2008 e do cliente Windows Vista com o objetivo de criar um ambiente de rede com um servidor e um cliente que se conecta a este.",
+				"alignment": "justify",
+				"force-max-width": "55%"
+			},
+			
+			"second-paragraph": {
+				"type": "text",
+				"content": "Para efeitos de seguimento efetivo, é necessário instalar o [VirtualBox](https://www.virtualbox.org/wiki/Downloads), uma imagem do [Windows Server 2008](https://drive.google.com/file/d/13oWNixCAzmJrnb4kxLKXnGrs00JpIVkh/view?usp=sharing) e outra de um cliente [Windows Vista](https://drive.google.com/file/d/1KAvt4SaFBQxh7Sn_-0a7PQlzCL0q2I5T/view?usp=sharing). Ambas as instalações podem ser mantidas com todas as configurações padrão.",
+				"alignment": "justify",
+				"force-max-width": "55%"
+			},
+			
+			"third-paragraph": {
+				"type": "text",
+				"content": "Após uma instalação com sucesso, o VirtualBox será apresentado da seguinte maneira:",
+				"alignment": "left",
+				"force-max-width": "55%"
+			},
+			
+			"installed-image": {
+				"type": "image",
+				"source": "assets/virtualbox_default.png",
+				"text": "Figura 1 - VirtualBox após instalação",
+				"width": "50%",
+				"height": "50%",
+				"border": "2px solid var(--tertiary)"
+			}
+		}
+  
+	}
+}

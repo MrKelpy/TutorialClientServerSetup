@@ -1,0 +1,88 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.server-setup",
+		"subsection-name": "Criação e Setup Básico do Servidor (VM)",
+		"position": 2
+	},
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"text": {
+				"type": "text",
+				"title": "Criar Uma Nova Máquina Virtual de Servidor",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"image": {
+					"type": "image",
+					"source": "assets/vb_new.png",
+					"text": "Figura 2 - Criar uma Nova Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Vamos começar por criar uma máquina virtual. Para isto, abra o VirtualBox e clique no botão <b>'New'</b> assinalado.",
+					"force-max-width": "30%",
+					"alignment": "justify"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"image": {
+					"type": "image",
+					"source": "assets/vb_vm_setup.png",
+					"text": "Figura 3 - Configurar a Nova Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Após o passo anterior, uma janela será aberta com configurações para a máquina virtual. Para efeitos deste tutorial, o nome desta máquina será <b>'ProjetoRedes'</b>, e a sua localização será a padrão. Seleciona o tipo <b>'Microsoft Windows'</b> com a versão <b>'Windows 2008 (32-bit)'</b>",
+					"force-max-width": "30%",
+					"alignment": "justify"
+				}
+			},
+			
+			"third-row": {
+				"type": "row",
+				"space-below": 1,
+				
+				"image": {
+					"type": "image",
+					"source": "assets/vb_ram.png",
+					"text": "Figura 4 - Configurar a RAM da Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Em seguida, escolha a quantidade de memória RAM que a máquina virtual terá. De acordo com as recomendações do VMWare para o Windows Server 2008, [devem-se usar 2GB de RAM.](https://communities.vmware.com/wbsdv95928/attachments/wbsdv95928/2033/106/1/vFiltered-windows2008best%20practices.pdf) Claro que isto vai também variar com a memória física da sua máquina. ",
+					"force-max-width": "30%",
+					"alignment": "justify"
+				}
+			},
+			
+			"text-final": {
+				"type": "text",
+				"content": "Para finalizar, cerca de <b>três janelas</b> vão ser exibidas com configurações adicionais, que pode deixar como padrão, passando à frente.",
+				"force-max-width": "50%",
+				"alignment": "justify"
+			}
+		}
+	}
+}

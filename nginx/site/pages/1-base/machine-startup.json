@@ -1,0 +1,158 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.server-setup",
+		"subsection-name": "Criação e Setup Básico do Servidor (VM)",
+		"position": 4
+	},
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"text": {
+				"type": "text",
+				"title": "Finalização do Setup Básico da Máquina Virtual do Servidor",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vb_start_vm.png",
+					"text": "Figura 8 - Ligar a máquina virtual",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "O próximo passo é ligar a máquina virtual. Para isso, basta clicar no botão <b>\"Start\"</b> na janela principal do VirtualBox. Isto fará com que a imagem préviamente instalada seja carregada.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vm_initial.png",
+					"text": "Figura 9 - Página inicial do windows setup",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "35%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Depois da máquina virtual ser ligada, a tela de setup inicial será exibida. Para efeitos deste tutorial, deixaremos a língua em Inglês, mas o formato da data será alterado para <b>Português (Portugal).</b><br>Clique em 'Next' e de seguida em 'Install Now'. Isto irá começar a fase de instalação do Windows.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"third-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vm_key.png",
+					"text": "Figura 10 - Inserir a chave do Windows",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "50%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Nesta janela será pedida a chave de ativação do Windows, que não é necessária para os fins deste tutorial. Dentro desta página, <b>clique na check box</b> de ativação on-line do Windows, para desligar a funcionalidade, e depois em <b>'Next'</b>.<br>Uma janela de confirmação irá ser apresentada, clique em <b>'No'</b> para ignorar a ativação do Windows.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"fourth-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vm_version.png",
+					"text": "Figura 11 - Selecionar a versão do Windows",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "50%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Nesta janela será pedida a versão do Windows a instalar. Visto que queremos um servidor 'como deve ser', usamos a versão <b>DataCenter</b>, a mais otimizada e usada em larga-escala por empresas. Clique na check box para desbloquear o botão <b>'Next'</b> e continue.<br><br>Logo de seguida serão exibidos os termos e condições desta versão do Windows server; Aceite-os e continue.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"fifth-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vm_lasttwo.png",
+					"text": "Figura 12 - Finalização",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "50%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Nas duas últimas janelas, será pedido para selecionar o tipo de instalação e a partição onde o Windows será instalado. Selecione a opção <b>'Custom'</b> e a partição <b>'Drive 0 Unallocated Space'</b> e clique em <b>'Next'</b>.<br>Depois de alguns minutos, o Windows estará instalado e quase pronto a ser usado.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"sixth-row": {
+				"type": "row",
+				"space-below": 2,
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vm_login.png",
+					"text": "Figura 13 - Mudar password",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "35%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Antes de poder usar o windows, terá apenas que especificar uma nova password. Para este processo funcionar corretamente, terá que cumprir com os requerimentos mínimos de segurança. Neste tutorial, foi usada a password <b>'Projetoredes.'</b>.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"notice": {
+				"type": "text",
+				"content": "<b style='font-size: 1.5em'>Nota:</b> Se for pedida a introdução de <b>CTRL+ALT+DELETE</b> para prosseguir, a virtualização dessa combinação de teclas encontra-se em <b>Input > Keyboard</b>.",
+				"alignment": "center",
+				"color": "var(--navigation)",
+				"force-max-width": "100%"
+			},
+			
+			"picture": {
+				"type": "image",
+				"source": "assets/ctrl_alt_del.png",
+				"text": "Figura 14 - CTRL + ALT + Delete",
+				"border": "0.12em solid var(--tertiary)"
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "base.server-setup",
+		"subsection-name": "Criação e Setup Básico do Servidor (VM)",
+		"position": 3
+	},
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"text": {
+				"type": "text",
+				"title": "Configuração da Máquina Virtual e Montagem de Imagens",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"settings-image": {
+					"type": "image",
+					
+					"source": "assets/vb_machine_settings.png",
+					"text": "Figura 5 - Configurações da Máquina Virtual",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Agora que a máquina virtual está criada, temos que inserir a imagem do Windows 2008 Server dentro da mesma. Esta imagem está disponível na [introdução deste capítulo](index.php?section=base&page=1) ou, também, clicando [aqui](https://drive.google.com/file/d/13oWNixCAzmJrnb4kxLKXnGrs00JpIVkh/view?usp=sharing).",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				"space-below": 1,
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_add_image.png",
+					"text": "Figura 6 - Adicionar imagem do Windows 2008",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "50%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "De seguida, abrir-se-á uma janela relativa às configurações da máquina virtual. Selecione a opção <b>'Storage'</b>, clique no disco vazio, <b>'Empty'</b> e clique no botão assinalado do mesmo. Selecione a <b>segunda</b> opção, e irá abrir-se uma janela de pesquisa; Use a imagem (<b>.iso</b>) que transferiu no passo acima.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+			},
+			
+			"third-row": {
+				"type": "row",
+				
+				"settings-image": {
+					"type": "image",
+					"source": "assets/vb_network_change.png",
+					"text": "Figura 7 - Mudar as configurações de rede",
+					"border": "0.12em solid var(--tertiary)"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Por fim, precisamos de mudar as definições do adaptador de rede da nossa máquina, de forma a que a máquina virtual tenha a sua própria rede interna. Para tal, clique em <b>'Network'</b> e mude o adaptador para <b>'Internal Network'</b>.",
+					"alignment": "justify",
+					"force-max-width": "30%"
+				}
+				
+			}
+		}
+	}
+}
