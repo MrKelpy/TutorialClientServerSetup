@@ -1,0 +1,38 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.introduction",
+		"subsection-name": "Introdução",
+		"position": 1
+	},
+	"content": {
+  
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Introdução",
+				"title-alignment": "center",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-paragraph": {
+				"type": "text",
+				"content": "Nesta secção irão ser abordadas as instalações de todos os recursos que o servidor precisará. Estas serão feitas através do Server Manager.<br> A ponto de resumo, as informações de ambas as máquinas de acordo com o tutorial até agora são as seguintes.:<br>&nbsp;",
+				"alignment": "justify",
+				"force-max-width": "55%"
+			},
+			
+			"second-paragraph": {
+				"type": "text",
+				"content": "<b style='font-size:20px; color: var(--navigation)'>Servidor</b><br><b>IP:</b> 192.168.1.10<br><b>Nome:</b> TutorialServidor<br><b>Utilizador:</b> Administrador<br><b>Password:</b> Redesprojeto.<br><br><b style='font-size:20px; color: var(--navigation)'>Cliente</b><br><b>IP:</b> Dinâmico<br><b>Utilizador:</b> TutorialCliente<br><b>Password:</b> Projetoredes.",
+				"alignment": "justify",
+				"force-max-width": "70%",
+				"content-border": "1px solid black",
+				"padding": "1em"
+			}
+		}
+	}
+}

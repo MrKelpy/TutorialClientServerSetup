@@ -26,7 +26,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_client_partitions_1.png",
-					"text": "Figura 15 - Criar o VM do cliente",
+					"text": "Figura - Criar o VM do cliente",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				
@@ -44,7 +44,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_client_partitions_2.png",
-					"text": "Figura 16 - Seleção do sistema NFTS",
+					"text": "Figura - Seleção do sistema NFTS",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				
@@ -54,9 +54,25 @@
 					"border": "0.12em solid var(--tertiary)",
 					"force-max-width": "25%"
 				}
+			},
+			
+			"third-row": {
+				"type": "row",
+				
+				"final-video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208440683610771456/vm_cliente_FinalizacaoContas.mp4?ex=65e34b16&is=65d0d616&hm=db54334af4a22ae749958a76c25b7bb09dac37aecfb50da187c9c3fba1f7b718&",
+					"text": "Figura - Finalização do setup das contas do windows",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "45%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Para finalizar, teremos apenas que criar uma conta de cliente e apagar as criadas por defeito. Isto é uma ótima forma de organização que nos vai ajudar na conexão cliente/servidor no futuro. Dê o nome de <b>TutorialCliente</b> à conta, faça-a administradora, crie uma password (com os mesmos requerimentos que a do Windows Server 2008), entre na mesma e apague todas as outras, exceto a <b>guest</b>.",
+					"force-max-width": "30%"
+				}
 			}
-			
-			
 		}
 	}
 }

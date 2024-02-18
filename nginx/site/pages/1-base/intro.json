@@ -42,7 +42,7 @@
 			"installed-image": {
 				"type": "image",
 				"source": "assets/virtualbox_default.png",
-				"text": "Figura 1 - VirtualBox após instalação",
+				"text": "Figura - VirtualBox após instalação",
 				"width": "50%",
 				"height": "50%",
 				"border": "2px solid var(--tertiary)"

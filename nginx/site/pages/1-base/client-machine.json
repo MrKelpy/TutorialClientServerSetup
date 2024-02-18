@@ -26,7 +26,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_client.png",
-					"text": "Figura 13 - Criar o VM do cliente",
+					"text": "Figura - Criar o VM do cliente",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				
@@ -44,7 +44,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_client_image.png",
-					"text": "Figura 14 - Inserir a imagem do cliente",
+					"text": "Figura - Inserir a imagem do cliente",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "35%"
 				},

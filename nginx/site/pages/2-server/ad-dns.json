@@ -1,0 +1,60 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.manager.addns",
+		"subsection-name": "Active Directory & DNS Server",
+		"position": 3
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Instalação do Active Directory e Servidor DNS",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208484334584201267/VirtualBoxVM_3O2NyGbvzS.mp4?ex=65e373bd&is=65d0febd&hm=4617a4bd8b3b27d7e763497745640a45a980ddb0bb24d65838c68f2c428e89d7&",
+					"text": "Figura - Instalações do AD e DNS",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Faremos agora a instalação do <b>Active Directory</b> e do <b>Servidor DNS</b>. Para isto, teremos que criar um domínio de nome <b>redes.projeto</b>.",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208484333766189107/VirtualBoxVM_gO74P28rRE.mp4?ex=65e373bd&is=65d0febd&hm=41416aff3c37a4eaeec8bb7c0b6ec568dc853e6df27e0c3ae342675b8b681546&",
+					"text": "Figura - Instalações do AD e DNS",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Após os passos acima verificamos que o nome do nosso servidor foi alterado, com um prefixo do domínio por trás. Não só isso, o nosso nome de utilizador também foi alterado da mesma forma, e os cargos foram instalados com sucesso.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

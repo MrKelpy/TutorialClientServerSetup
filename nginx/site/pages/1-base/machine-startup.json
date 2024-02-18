@@ -26,7 +26,7 @@
 					"type": "image",
 					
 					"source": "assets/vb_start_vm.png",
-					"text": "Figura 8 - Ligar a máquina virtual",
+					"text": "Figura - Ligar a máquina virtual",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				
@@ -65,7 +65,7 @@
 					"type": "image",
 					
 					"source": "assets/vm_key.png",
-					"text": "Figura 10 - Inserir a chave do Windows",
+					"text": "Figura - Inserir a chave do Windows",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "50%"
 				},
@@ -85,7 +85,7 @@
 					"type": "image",
 					
 					"source": "assets/vm_version.png",
-					"text": "Figura 11 - Selecionar a versão do Windows",
+					"text": "Figura - Selecionar a versão do Windows",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "50%"
 				},
@@ -105,7 +105,7 @@
 					"type": "image",
 					
 					"source": "assets/vm_lasttwo.png",
-					"text": "Figura 12 - Finalização",
+					"text": "Figura - Finalização",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "50%"
 				},
@@ -126,7 +126,7 @@
 					"type": "image",
 					
 					"source": "assets/vm_login.png",
-					"text": "Figura 13 - Mudar password",
+					"text": "Figura - Mudar password",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "35%"
 				},
@@ -150,7 +150,7 @@
 			"picture": {
 				"type": "image",
 				"source": "assets/ctrl_alt_del.png",
-				"text": "Figura 14 - CTRL + ALT + Delete",
+				"text": "Figura - CTRL + ALT + Delete",
 				"border": "0.12em solid var(--tertiary)"
 			}
 		}

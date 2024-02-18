@@ -25,7 +25,7 @@
 				"image": {
 					"type": "image",
 					"source": "assets/vb_new.png",
-					"text": "Figura 2 - Criar uma Nova Máquina Virtual",
+					"text": "Figura - Criar uma Nova Máquina Virtual",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "30%"
 				},
@@ -44,7 +44,7 @@
 				"image": {
 					"type": "image",
 					"source": "assets/vb_vm_setup.png",
-					"text": "Figura 3 - Configurar a Nova Máquina Virtual",
+					"text": "Figura - Configurar a Nova Máquina Virtual",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "30%"
 				},
@@ -64,7 +64,7 @@
 				"image": {
 					"type": "image",
 					"source": "assets/vb_ram.png",
-					"text": "Figura 4 - Configurar a RAM da Máquina Virtual",
+					"text": "Figura - Configurar a RAM da Máquina Virtual",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "30%"
 				},

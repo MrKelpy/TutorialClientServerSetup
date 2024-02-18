@@ -1,0 +1,42 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.manager",
+		"subsection-name": "Server Manager",
+		"position": 2
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Configuração Inicial do Windows Server",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208452730885120060/VirtualBoxVM_khGMxLIjlz.mp4?ex=65e3564f&is=65d0e14f&hm=f4a9e88e80df10dfcf27c558646253076e467395d5df7423b8178c265ea39947&",
+					"text": "Figura - Configuração Inicial",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Inicialmente, é apenas necessário mudar duas configurações: As <b>configurações de rede</b>, trocando o tipo de IP do servidor de <i>dinâmico</i> para <i>estático</i> com a DNS a apontar para o mesmo IP, e o <b>nome da máquina</b> por motivos de organização. É necessário que o servidor tenha um IP estático para que o cliente o possa encontrar sempre na mesma 'localização'. Após este passo, reinicie o servidor.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

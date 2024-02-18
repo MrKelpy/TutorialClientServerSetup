@@ -208,3 +208,9 @@ Formatting legend:
 
             - force-max-width: ##% (optional)
                 >   The maximum width of the text element, overriding the default value.
+
+            - content-border: "#px solid example color" (optional)
+                >   The border of the text element. If not defined, the default border will be used.
+
+            - padding: "##px ##px ##px ##px" (optional)
+                >   The padding of the text element. If not defined, the default padding will be used.

@@ -26,7 +26,7 @@
 					"type": "image",
 					
 					"source": "assets/vb_machine_settings.png",
-					"text": "Figura 5 - Configurações da Máquina Virtual",
+					"text": "Figura - Configurações da Máquina Virtual",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				
@@ -45,7 +45,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_add_image.png",
-					"text": "Figura 6 - Adicionar imagem do Windows 2008",
+					"text": "Figura - Adicionar imagem do Windows 2008",
 					"border": "0.12em solid var(--tertiary)",
 					"width": "50%"
 				},
@@ -64,7 +64,7 @@
 				"settings-image": {
 					"type": "image",
 					"source": "assets/vb_network_change.png",
-					"text": "Figura 7 - Mudar as configurações de rede",
+					"text": "Figura - Mudar as configurações de rede",
 					"border": "0.12em solid var(--tertiary)"
 				},
 				

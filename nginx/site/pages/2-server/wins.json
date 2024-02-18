@@ -1,0 +1,42 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.manager.wins",
+		"subsection-name": "WINS Service",
+		"position": 4
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Instalação do WINS Service",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208488902088720404/VirtualBoxVM_GweejQKwQ2.mp4?ex=65e377fe&is=65d102fe&hm=270d7cb1101a9a81b5aaec01898e836c0e235e1501fffe096be56d0451a3d787&",
+					"text": "Figura - Instalação do WINS Service",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Vamos também instalar o sistema WINS, um que possibilita a resolução de nomes NetBIOS em <b>redes locais</b>, antiga solução da DNS a partir da Microsoft. <b>Este sistema é inútil fora da LAN</b>.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

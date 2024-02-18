@@ -1,0 +1,60 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.manager.npas",
+		"subsection-name": "Network Policy & Access Services",
+		"position": 7
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Configuração da Network Policy & Access Services",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208532829139501106/VirtualBox_VyYxNT5O5H.mp4?ex=65e3a0e7&is=65d12be7&hm=ebdf9a6b4f17bda3ed280eb425284815a6a4eb8b0a8412ee7601cc62ecc26a50&",
+					"text": "Figura - Setup do segundo adaptador de rede",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Da parte do servidor, é apenas preciso configurar um segundo adaptador de rede em NAT para que o servidor tenha acesso à internet. Para isso, basta ir às definições do servidor, clicar em <b>Network</b> e adicionar um segundo adaptador de rede. <b>Para isto, o servidor tem de estar desligado.</b>",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208532828573409291/VirtualBoxVM_TJWW9UuDNN.mp4?ex=65e3a0e7&is=65d12be7&hm=30781be87f7a101e696f4cf4288ab78e6440e40776ad6a0a877559243672d1cc&",
+					"text": "Figura - Configuração e Instalação do Network Policy & Access Services",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Finalmente, é preciso instalar o Network Policy & Access Services. Este serviço é responsável por fornecer acesso à internet a todos os clientes que se conectem ao servidor, agindo como um Router.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

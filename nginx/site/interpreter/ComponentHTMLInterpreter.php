@@ -46,6 +46,8 @@
             $contentColor = array_key_exists('color', $componentData) ? $componentData['color'] : 'var(--tertiary)';
             $contentAlignment = array_key_exists('alignment', $componentData) ? $componentData['alignment'] : 'left';
             $maxSize = array_key_exists('force-max-width', $componentData) ? $componentData['force-max-width'] : '50%';
+            $border = array_key_exists('content-border', $componentData) ? $componentData['content-border'] : 'none';
+            $padding = array_key_exists('padding', $componentData) ? $componentData['padding'] : '0';
             
             // Gets the content and replaces any [linked](text) with html a tags.
             $content = $componentData['content'];
@@ -59,7 +61,7 @@
                 $content = str_replace($match, "<a href='$link[1]'>$text[1]</a>", $content);
             }
             
-            $element = "<div class='text-component' style='max-width: $maxSize'><h3 style='font-size: $titleSize; color: $titleColor; text-align: $titleAlignment; text-decoration: $titleDecorations;'>$title</h3>";
+            $element = "<div class='text-component' style='padding: $padding; border: $border; max-width: $maxSize'><h3 style='font-size: $titleSize; color: $titleColor; text-align: $titleAlignment; text-decoration: $titleDecorations;'>$title</h3>";
             $element .= "<p style='font-size: $contentSize; color: $contentColor; text-align: $contentAlignment; text-decoration: $contentDecorations;'>{$content}</p>";
             
             return $element . "</div>";

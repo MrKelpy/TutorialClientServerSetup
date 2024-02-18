@@ -1,0 +1,60 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "client.introduction",
+		"subsection-name": "Introdução",
+		"position": 1
+	},
+	"content": {
+  
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Introdução",
+				"title-alignment": "center",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-paragraph": {
+				"type": "text",
+				"content": "Nesta secção irá ser abordado o setup do domínio do cliente e a sua conexão ao servidor. É um capítulo pequeno mas essencial por motivos de demonstração; A ponto de relembrança, as credênciais de ambas as máquinas e do domínio são.:",
+				"alignment": "justify",
+				"force-max-width": "55%"
+			},
+			
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"first-paragraph": {
+					"type": "text",
+					"content": "<b style='font-size:20px; color: var(--navigation)'>Servidor</b><br><b>IP:</b> 192.168.1.10<br><b>Nome:</b> TutorialServidor<br><b>Utilizador:</b> Administrador<br><b>Password:</b> Redesprojeto.<br><br><b style='font-size:20px; color: var(--navigation)'>Cliente</b><br><b>IP:</b> Dinâmico<br><b>Utilizador:</b> TutorialCliente<br><b>Password:</b> Projetoredes.",
+					"alignment": "justify",
+					"force-max-width": "70%",
+					"content-border": "1px solid black",
+					"padding": "1em"
+				},
+				
+				"spacer": {
+					"type": "text",
+					"content": "...",
+					"color": "var(--primary)",
+					"content-size": "50px"
+				},
+				
+				"second-paragraph": {
+					"type": "text",
+					"content": "<b style='font-size:20px; color: var(--navigation)'>Domínio - Administrador</b><br><b>Username:</b> Administrator<br><b>Password:</b> Projetoredes.<br><br><b style='font-size:20px; color: var(--navigation)'>Domínio - Utilizador</b><br><b>Username:</b> alex<br><b>Password:</b> Redesprojeto.<br>",
+					"alignment": "justify",
+					"force-max-width": "70%",
+					"content-border": "1px solid black",
+					"padding": "1em"
+				}
+			}
+		}
+	}
+}

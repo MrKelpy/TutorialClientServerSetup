@@ -1,0 +1,61 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "client.connect",
+		"subsection-name": "Conexão do Cliente ao Domínio",
+		"position": 2
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Conexão do Cliente ao Domínio",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208571748841431090/VirtualBoxVM_47p9L1Pp5T.mp4?ex=65e3c527&is=65d15027&hm=63d924d9109e9b8e0dcbef26f49b20e5168c54a9dc7f0f3cfcad26fe7ca112b7&",
+					"text": "Figura - Tentativa de conexão do cliente ao domínio",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Para conectar um computador numa rede interna a um domínio, é apenas necessário definir o domínio a conectar nas definições do computador e fornecer as credenciais de um utilizador com permissões para adicionar computadores ao domínio.<br><br><b>Para isto, é necessário que o servidor com Active Directory esteja ligado.</b>",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208574932817154089/VirtualBoxVM_5kre8kAXcs.mp4?ex=65e3c81e&is=65d1531e&hm=4f0a6988b66c50e8a8f2bdbf9c7f083b8f0f7e2f3b53a488def20f7d30bd6bb4&",
+					"text": "Figura - Verificação de conexão",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Devido às circunstâncias do último vídeo, é necessário verificar se a conexão foi bem sucedida. Para tal, basta verificar se o computador foi adicionado ao domínio através do <b>'Meu computador'</b>.<br><br>De seguida, reiniciamos o computador para dar login através da conta registada no domínio, e é possível verificar que a conexão foi bem sucedida!",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

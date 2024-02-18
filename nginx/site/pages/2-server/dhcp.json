@@ -1,0 +1,42 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.manager.dhcp",
+		"subsection-name": "DHCP Server",
+		"position": 5
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Instalação do DHCP Server",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208495879120617502/VirtualBoxVM_peJineFJyv.mp4?ex=65e37e7e&is=65d1097e&hm=e14f35fcd694539444a532d59fc6e74818ac6519dd4a841b411930f59816aadb&",
+					"text": "Figura - Instalação do DHCP Server",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Prosseguimos à instalação do DHCP Server, que é responsável por atribuir endereços IP automaticamente aos dispositivos da rede. Os escopos DHCP não serão cobertos nesta secção, e invés disso terão uma para si mesmos.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}

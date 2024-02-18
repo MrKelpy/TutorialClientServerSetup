@@ -1,0 +1,60 @@
+{
+	"type": "page",
+	"section": {
+		"namespace": "server.users",
+		"subsection-name": "Configurar Utilizadores e Computadores No Active Directory",
+		"position": 8
+	},
+	
+	"content": {
+		
+		"root": {
+			"type": "column",
+			
+			"title": {
+				"type": "text",
+				"title": "Configuração de Utilizadores e Computadores no Active Directory",
+				"title-size": "2em",
+				"content": "",
+				"force-max-width": "100%"
+			},
+			
+			"first-row": {
+				"type": "row",
+				"space-above": 1,
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208537782411333682/VirtualBoxVM_tn1jsmDYak.mp4?ex=65e3a584&is=65d13084&hm=51a46cbacd4caaa007b7304f38f0670b2d172a79d19f3bc3d2bf754924da7d11&",
+					"text": "Figura - Setup do segundo adaptador de rede",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Para adicionar e configurar utilizadores e computadores no Active Directory, é necessário ir às configurações do domínio e inserir a informação pessoal do utilizador ou do computador. Simples!",
+					"force-max-width": "25%"
+				}
+			},
+			
+			"second-row": {
+				"type": "row",
+				
+				"video": {
+					"type": "video",
+					"source": "https://cdn.discordapp.com/attachments/1208440644733902858/1208532828573409291/VirtualBoxVM_TJWW9UuDNN.mp4?ex=65e3a0e7&is=65d12be7&hm=30781be87f7a101e696f4cf4288ab78e6440e40776ad6a0a877559243672d1cc&",
+					"text": "Figura - Configuração e Instalação do Network Policy & Access Services",
+					"border": "0.12em solid var(--tertiary)",
+					"width": "30%"
+				},
+				
+				"text": {
+					"type": "text",
+					"content": "Finalmente, é preciso instalar o Network Policy & Access Services. Este serviço é responsável por fornecer acesso à internet a todos os clientes que se conectem ao servidor, agindo como um Router.",
+					"force-max-width": "25%"
+				}
+			}
+		}
+	}
+}
