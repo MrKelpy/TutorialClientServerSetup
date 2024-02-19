@@ -27,7 +27,7 @@
 			
 			"second-paragraph": {
 				"type": "text",
-				"content": "Para efeitos de seguimento efetivo, é necessário instalar o [VirtualBox](https://www.virtualbox.org/wiki/Downloads), uma imagem do [Windows Server 2008](https://drive.google.com/file/d/13oWNixCAzmJrnb4kxLKXnGrs00JpIVkh/view?usp=sharing) e outra de um cliente [Windows Vista](https://drive.google.com/file/d/1KAvt4SaFBQxh7Sn_-0a7PQlzCL0q2I5T/view?usp=sharing). Ambas as instalações podem ser mantidas com todas as configurações padrão.",
+				"content": "Para efeitos de seguimento efetivo, é necessário instalar o [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1), uma imagem do [Windows Server 2008](https://drive.google.com/file/d/13oWNixCAzmJrnb4kxLKXnGrs00JpIVkh/view?usp=sharing) e outra de um cliente [Windows Vista](https://drive.google.com/file/d/1KAvt4SaFBQxh7Sn_-0a7PQlzCL0q2I5T/view?usp=sharing). Ambas as instalações podem ser mantidas com todas as configurações padrão.",
 				"alignment": "justify",
 				"force-max-width": "55%"
 			},
