@@ -5,9 +5,12 @@
 		"subsection-name": "home",
 		"position": 1
 	},
+	
 	"content": {
+		
 		"root": {
 			"type": "column",
+			
 			"content-line": {
 				"type": "row",
     

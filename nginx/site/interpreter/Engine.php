@@ -235,7 +235,7 @@
             $navigation .= "<a class='button-href' $backHref>Back</a>";
             
             // For as many pages as there are in the section, build a hyperlink.
-            for ($i = 0; $i < $page_total; $i++) {
+            for ($i = $section->index ? 0 : 1 ; $i < $page_total; $i++) {
                 
                 if ($i == $current_page) $navigation .= "<a class='selected' href='index.php?section=$section_namespace&page=$i'>$i </a>";
                 else $navigation .= "<a href='index.php?section=$section_namespace&page=$i'>$i </a>";
