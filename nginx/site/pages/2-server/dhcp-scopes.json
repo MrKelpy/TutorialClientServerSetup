@@ -9,6 +9,7 @@
 	"content": {
 		
 		"root": {
+			
 			"type": "column",
 			
 			"title": {

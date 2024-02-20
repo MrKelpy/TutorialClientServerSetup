@@ -16,6 +16,7 @@ To create a section, a json file must be created following this base format:
 ```json
 {
     type: "section",
+
     name: "example section name",
     namespace: "main",
     position: #,
@@ -69,7 +70,6 @@ with a basis on:
 
             video-name: {
                 "type": "video",
-                "title": "example video title",
                 "source": "example video source",
                 "width": ##px,
                 "height": ##px,
@@ -99,7 +99,6 @@ with a basis on:
                 "alignment": "left, center, right or justify"
                 "force-max-width": ##%
             }
-
         }
     }
 }
