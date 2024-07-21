@@ -134,3 +134,6 @@ Stack trace:
 2024/02/13 21:25:37 [emerg] 948#16612: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
 2024/02/13 21:25:54 [emerg] 11836#4756: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
 2024/02/13 21:26:00 [emerg] 1392#16968: bind() to 0.0.0.0:7070 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/07/20 19:52:12 [emerg] 25556#15104: CreateDirectory() "C:\dev\C#\TutorialClientServerSetup\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2024/07/20 19:52:45 [emerg] 2844#4420: CreateDirectory() "C:\dev\C#\TutorialClientServerSetup\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2024/07/20 19:53:12 [emerg] 19084#8148: CreateDirectory() "C:\dev\C#\TutorialClientServerSetup\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)

@@ -2,7 +2,7 @@
 setlocal
 
 taskkill /IM nginx.exe /f
-taskkill /IM php-fcgi.bat /f
+taskkill /IM php-fcgi.exe /f
 
 :: Check if the php cgi exists
 if not exist .\nginx\php\php-cgi.exe (
